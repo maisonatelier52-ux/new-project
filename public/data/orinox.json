@@ -1,0 +1,29 @@
+[{
+"mainTitle":"From First Well to Low-Carbon Evalution Route",
+"topic":"INTEGRATED PROPOSITION",
+"title":"Integration is the differentiator.",
+"image":"/images/first-well-to-low-carbon-evacuation-route.png",
+"description":"Single partner for drilling, field infrastructure, and low-carbon compatibility." ,
+"description1":"Reduced time to first oil/gas, better NPV and IRR through integrated planning.",
+"description2": "Built-in emissions and future-proofing for CCUS/H2."
+},
+{
+  "mainTitle": "\"Legacy Practice\" vs \"Orinox Method\"",
+"topic":"INTEGRATED PROPOSITION",
+"title":"Orinox is grounded in technical rigor and in-depth research",
+"image":"/images/orinox-grounded-techninal-rigor-depth-research.jpg",
+"description":"Adoption of best practices from latest upstream drilling and midstream pipeline R&D.",
+"description1":"Partnerships with technology vendors (digital drilling, emissions detection, digital twins).",
+"description2":" Continues benchmarking: ROP performance, emissions intensity, cost per barrel delivered."
+},
+{
+  "mainTitle": "Reliable ESG KPIs (methane intensity, flaring rate, local content %, safety TRIR).",
+"topic":"ESG & Sustainability Strategy",
+"title":"Responsible hydrocarbons with quantifiable ESG metrics.",
+"image":"/images/responsible-hydrocarbons-quantifiable-esc-metrics.png",
+"description":"Methane and fugitive emissions reduction initiatives.",
+"description1": "Electrification pathways for rigs and infrastructure.",
+"description2": "Decommissioningand brownfield repurposing (geothermal, CCUS).",
+"description3":"Community engagement and local content strategy."
+}
+]

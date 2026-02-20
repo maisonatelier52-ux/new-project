@@ -1,0 +1,60 @@
+export default function UpstreamAndMidstream() {
+  return (
+    <main className="relative h-screen w-full overflow-hidden">
+      {/* Background Image */}
+      <img
+        src="/images/why-orinox.png"
+        alt="Oil and Gas Facility"
+        className="absolute inset-0 h-full w-full object-fit"
+      />
+
+      {/* Content */}
+      <div className="relative z-10 h-screen flex flex-col">
+        {/* Top Right Logo */}
+        <div className="flex justify-end px-20 pt-10">
+          <div className="flex items-center gap-3">
+            <img
+              src="/images/orinox-white-logo.png"
+              alt="Orinox Logo"
+              className="h-12 w-auto"
+            />
+          </div>
+        </div>
+
+        {/* Right Side Middle Content */}
+        <div className="flex-1 flex justify-end items-center px-20">
+          <div className="text-right space-y-10">
+            {/* Upstream */}
+            <div>
+              <p className="text-white/70 text-sm mb-2">
+                Upstream (Exploration & Production)
+              </p>
+              <h1 className="text-white text-6xl font-light tracking-wide">
+                E&amp;P
+              </h1>
+            </div>
+
+            {/* Midstream */}
+            <div>
+              <p className="text-white/70 text-sm mb-2">
+                Midstream (Transportation & Storage)
+              </p>
+              <h1 className="text-white text-6xl font-light tracking-wide">
+                T&amp;S
+              </h1>
+            </div>
+          </div>
+        </div>
+
+        {/* Bottom Right Description */}
+        <div className="flex justify-end px-20 pb-14">
+          <p className="max-w-xl text-right text-white/70 text-sm leading-relaxed">
+            ORINOX is a full-service oil drilling company operating across the
+            Upstream (Exploration & Production) and Midstream (Transportation &
+            Storage) segments of the oil and gas value chain.
+          </p>
+        </div>
+      </div>
+    </main>
+  );
+}
