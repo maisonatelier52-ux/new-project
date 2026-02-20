@@ -2,9 +2,9 @@ import Image from "next/image";
 
 export default function FutureCapabilities() {
   return (
-    <main className="relative h-screen w-full overflow-hidden">
+   <main className="relative h-screen w-full overflow-hidden">
       <img
-        src="/images/orinox-global-locations.png"
+        src="/images/orinox-global-locations.jpg"
         alt="Oil and Gas Facility"
         className="absolute inset-0 h-full w-full object-fit"
       />
@@ -19,27 +19,28 @@ export default function FutureCapabilities() {
         />
       </div>
 
-      <div className="absolute bottom-26 left-16 z-20 max-w-xl text-white">
-        <p className="inline-block bg-black/90 px-3 py-2 text-xs uppercase tracking-widest text-white">
-  The Future
-</p>
+        <div className="absolute bottom-20 -translate-y-1/2 right-6 space-y-5 sm:right-10 lg:right-25 z-20  max-w-xs sm:max-w-md lg:max-w-xl text-white flex flex-col">    
 
-        <h1 className="text-4xl font-light leading-tight mb-4">
-          Oil &amp; gas is transforming,
-          <br />
-          <span className="font-normal">not disappearing.</span>
-        </h1>
 
-        <p className="text-sm text-white/70 leading-tight">
-          Global oil and gas demand forecasts with long plateau.
-          <br />
-          Capital disciplined operators seeking higher productivity, lower
-          emissions.
-          <br />
-          Huge capex in brownfield optimization, CCUS, and infrastructure
-          upgrade.
-        </p>
-      </div>
+  <div>
+    <h2 className="text-white/80 text-sm font-semibold">United Kingdom</h2>
+         <p className="text-[12px] text-white/60 leading-tight">
+Level 28, 52 Lime Street, London,
+<br/>
+EC3M 7AF, United Kingdom
+</p>  
+</div> 
+ <div>
+ <h2 className="text-white/80 text-sm font-semibold">United Arab Emirates</h2>
+         <p className="text-[12px] text-white/60 leading-tight">
+Villa 145, Al Manara Street, Al Safa 2,
+<br/>
+Dubai, United Arab Emirates
+</p>   
+</div>
+   
+        
+</div>
     </main>
   );
 }

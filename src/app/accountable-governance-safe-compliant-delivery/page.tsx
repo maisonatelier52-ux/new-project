@@ -2,14 +2,14 @@ import Image from "next/image";
 
 export default function CurrentCapabilities() {
   return (
-    <main className="relative h-screen w-full overflow-hidden">
+     <main className="relative h-screen w-full overflow-hidden">
       <img
-        src="/images/accountable-governance-safe-compliant-delivery.png"
+        src="/images/accountable-governance-safe-compliant-delivery.jpg"
         alt="Oil and Gas Facility"
-        className="absolute inset-0 h-full w-full object-fit"
+        className="absolute inset-0 h-full w-full object-cover"
       />
 
-      {/* <div className="absolute inset-0 bg-black/40" /> */}
+      <div className="absolute inset-0 bg-black/40" />
 
       <div className="absolute top-8 right-16 z-20 flex items-center gap-3">
         <img
@@ -19,25 +19,33 @@ export default function CurrentCapabilities() {
         />
       </div>
 
-      <div className="absolute bottom-26 left-16 z-20 max-w-xl text-white">
-        <p className="inline-block text-xs uppercase tracking-widest text-white">
-  WHO WE ARE
-</p>
+        <div className="absolute bottom-10 -translate-y-1/2 left-6 space-y-5 sm:left-10 lg:left-25 z-20  max-w-xs sm:max-w-md lg:max-w-xl text-white flex flex-col">    
+  
 
-        <h1 className="text-4xl font-light leading-tight mb-4">
-          Precision Drilling &amp; 
-          <br />
-          <span className="font-normal">Low-Carbon Infrastructure Partner</span>
-        </h1>
-<p className="">High-performance</p>
-        <p className="text-sm text-white/70 leading-tight">
-          Specilalist drilling and field development partner (Upstream & Near-Field Midstream.)
-          <br />
-          Combining drilling excellence with digital optimization and low-carbon readiness
-          <br />
-       Targeting attractive IRRs across drilling. CCUS, and hydrogen-ready advisory.
-        </p>
-      </div>
+
+         <div>
+            <h2 className="text-white/80 text-[13px] font-semibold">Accountable Governance Structure for Safe, Compliant Delivery</h2>
+        <p className="text-[12px] text-white/70 leading-tight">
+Orinox is a specialist well delivery and near-field midstream partner. We combine drilling execution, well engineering, and infrastructure readiness with measurable HSE and emissions performance. Operations are governed by defined accountabilities, technical assurance, and a compliance-first culture.
+</p>
+</div>
+       <div>
+<h2 className="text-white/80 text-[13px] font-semibold">Government Interface & Reporting</h2>
+         <p className="text-[12px] text-white/70 leading-tight">
+Monthly HSE and progress reporting (with incident/near-miss transparency).
+<br/>
+Monthly HSE and progress reporting (with incident/near-miss transparency).
+<br/>
+Local content dashboard and supplier development status.
+<br/>
+Local content dashboard and supplier development status.
+</p>
+     
+       </div>
+      
+       
+  
+</div>
     </main>
   );
 }

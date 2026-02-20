@@ -19,25 +19,30 @@ export default function OurExpertise() {
         />
       </div>
 
-      <div className="absolute bottom-26 left-16 z-20 max-w-xl text-white">
-        <p className="inline-block text-xs uppercase tracking-widest text-white">
-  WHO WE ARE
+       <div className="absolute bottom-20 w-120 -translate-y-1/2 right-6 space-y-5 sm:right-10 lg:right-25 z-20  max-w-xs sm:max-w-md lg:max-w-xl text-white flex flex-col">    
+ <div>
+       <p className="inline-block w-fit  text-xs uppercase tracking-wide text-white/50 mb-1.5">
+WHY WE EXCEL OVER THE REST
 </p>
+ </div>
+   <div>
+        
+          <h1 className="text-[14px] font-semibold leading-none text-white/80 ">
+We drill better, faster, safer
+          </h1>
+        </div>
 
-        <h1 className="text-4xl font-light leading-tight mb-4">
-          Precision Drilling &amp; 
-          <br />
-          <span className="font-normal">Low-Carbon Infrastructure Partner</span>
-        </h1>
-<p className="">High-performance</p>
-        <p className="text-sm text-white/70 leading-tight">
-          Specilalist drilling and field development partner (Upstream & Near-Field Midstream.)
-          <br />
-          Combining drilling excellence with digital optimization and low-carbon readiness
-          <br />
-       Targeting attractive IRRs across drilling. CCUS, and hydrogen-ready advisory.
-        </p>
-      </div>
+  <div>
+    
+         <p className="text-[12px] text-white/60 leading-tight">
+We design field and midstream infrastructure that is ready for CCUS and hydrogen.
+We turn legacy oil & gas capex into future-proof, low-carbon assets.</p>    
+  </div>
+        
+     
+  
+</div>
     </main>
   );
 }
+

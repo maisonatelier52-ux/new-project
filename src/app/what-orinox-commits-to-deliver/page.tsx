@@ -1,60 +1,43 @@
 export default function UpstreamAndMidstream() {
   return (
     <main className="relative h-screen w-full overflow-hidden">
-      {/* Background Image */}
       <img
         src="/images/what-orinox-commits-to-deliver.png"
         alt="Oil and Gas Facility"
-        className="absolute inset-0 h-full w-full object-fit"
+        className="absolute inset-0 h-full w-full object-cover"
       />
 
-      {/* Content */}
-      <div className="relative z-10 h-screen flex flex-col">
-        {/* Top Right Logo */}
-        <div className="flex justify-end px-20 pt-10">
-          <div className="flex items-center gap-3">
-            <img
-              src="/images/orinox-white-logo.png"
-              alt="Orinox Logo"
-              className="h-12 w-auto"
-            />
-          </div>
-        </div>
+      <div className="absolute inset-0 bg-black/20" />
 
-        {/* Right Side Middle Content */}
-        <div className="flex-1 flex justify-end items-center px-20">
-          <div className="text-right space-y-10">
-            {/* Upstream */}
-            <div>
-              <p className="text-white/70 text-sm mb-2">
-                Upstream (Exploration & Production)
-              </p>
-              <h1 className="text-white text-6xl font-light tracking-wide">
-                E&amp;P
-              </h1>
-            </div>
-
-            {/* Midstream */}
-            <div>
-              <p className="text-white/70 text-sm mb-2">
-                Midstream (Transportation & Storage)
-              </p>
-              <h1 className="text-white text-6xl font-light tracking-wide">
-                T&amp;S
-              </h1>
-            </div>
-          </div>
-        </div>
-
-        {/* Bottom Right Description */}
-        <div className="flex justify-end px-20 pb-14">
-          <p className="max-w-xl text-right text-white/70 text-sm leading-relaxed">
-            ORINOX is a full-service oil drilling company operating across the
-            Upstream (Exploration & Production) and Midstream (Transportation &
-            Storage) segments of the oil and gas value chain.
-          </p>
-        </div>
+      <div className="absolute top-8 right-16 z-20 flex items-center gap-3">
+        <img
+          src="/images/Orinox-white-logo.png"
+          alt="Orinox Logo"
+          className="h-12 w-auto"
+        />
       </div>
+
+    <div className="absolute top-95 -translate-y-1/2 left-6 space-y-5 sm:left-10 lg:left-25 z-20   text-white flex flex-col">    
+   
+
+  <div>
+    <h2 className="text-white/70 text-[13px] font-semibold">What Orinox commits to deliver</h2>
+           </div>
+        
+       <div>
+        <p className="text-[12px] text-white/60 leading-tight">
+A phased drilling + near-field midstream scope, with integrated low-carbon readiness.
+ 
+  <br/>
+  A complete HSE and environmental management plan aligned to national regulations and international practice.
+  <br/>
+  A local content plan (jobs, training, supplier onboarding, reporting cadence).
+  <br/>
+  Transparent progress reporting and auditable KPIs (safety, schedule, emissions, local value).
+ </p>
+       </div>
+  
+</div>
     </main>
   );
 }

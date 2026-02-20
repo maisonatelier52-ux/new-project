@@ -1,60 +1,58 @@
 export default function UpstreamAndMidstream() {
   return (
-    <main className="relative h-screen w-full overflow-hidden">
-      {/* Background Image */}
+   <main className="relative h-screen w-full overflow-hidden">
       <img
-        src="/images/why-orinox.png"
+        src="/images/why-orinox.jpg"
         alt="Oil and Gas Facility"
         className="absolute inset-0 h-full w-full object-fit"
       />
 
-      {/* Content */}
-      <div className="relative z-10 h-screen flex flex-col">
-        {/* Top Right Logo */}
-        <div className="flex justify-end px-20 pt-10">
-          <div className="flex items-center gap-3">
-            <img
-              src="/images/orinox-white-logo.png"
-              alt="Orinox Logo"
-              className="h-12 w-auto"
-            />
-          </div>
-        </div>
+      <div className="absolute inset-0 bg-black/40" />
 
-        {/* Right Side Middle Content */}
-        <div className="flex-1 flex justify-end items-center px-20">
-          <div className="text-right space-y-10">
-            {/* Upstream */}
-            <div>
-              <p className="text-white/70 text-sm mb-2">
-                Upstream (Exploration & Production)
-              </p>
-              <h1 className="text-white text-6xl font-light tracking-wide">
-                E&amp;P
-              </h1>
-            </div>
-
-            {/* Midstream */}
-            <div>
-              <p className="text-white/70 text-sm mb-2">
-                Midstream (Transportation & Storage)
-              </p>
-              <h1 className="text-white text-6xl font-light tracking-wide">
-                T&amp;S
-              </h1>
-            </div>
-          </div>
-        </div>
-
-        {/* Bottom Right Description */}
-        <div className="flex justify-end px-20 pb-14">
-          <p className="max-w-xl text-right text-white/70 text-sm leading-relaxed">
-            ORINOX is a full-service oil drilling company operating across the
-            Upstream (Exploration & Production) and Midstream (Transportation &
-            Storage) segments of the oil and gas value chain.
-          </p>
-        </div>
+      <div className="absolute top-8 right-16 z-20 flex items-center gap-3">
+        <img
+          src="/images/Orinox-white-logo.png"
+          alt="Orinox Logo"
+          className="h-12 w-auto"
+        />
       </div>
+
+        <div className="absolute top-1/2 -translate-y-1/2 left-6 space-y-5 sm:left-10 lg:left-25 z-20  max-w-xs sm:max-w-md lg:max-w-xl text-white flex flex-col">    
+   <div>
+        
+          <h1 className="text-[14px] font-semibold leading-none text-white/70 ">
+Why Orinox?
+          </h1>
+        </div>
+
+  <div>
+    
+         <p className="text-[12px] text-white/60 leading-tight">
+Faster time-to-production, reduced flaring and methane leakage, strengthened local capability, and improved reliability of evacuation infrastructure—delivered with transparent KPIs and auditable controls.
+</p>  </div>
+         <div>
+            <h2 className="text-white/70 text-[13px] font-semibold">Compliance-first Execution</h2>
+        <p className="text-[12px] text-white/60 leading-tight">
+Permit-to-work, well control, contractor bridging, and ESIA/ESMP planning embedded from day one. Clear reporting cadence and government audit rights.
+</p>
+</div>
+       <div>
+<h2 className="text-white/70 text-[13px] font-semibold">Measured Emissions Management</h2>
+         <p className="text-[12px] text-white/60 leading-tight">
+LDAR programs, flaring minimization, fuel monitoring, and emissions dashboards (MRV-ready) to meet evolving methane and climate requirements.
+</p>
+     
+       </div>
+       <div>
+        <h2 className="text-white/70 text-[13px] font-semibold">Local Content and Skills Transfer</h2>
+        <p className="text-[12px] text-white/60 leading-tight">
+      Structured workforce development, supplier onboarding, and training pipelines designed to meet local content regulations and build durable national capability.
+
+     </p>
+       </div>
+       
+  
+</div>
     </main>
   );
 }
