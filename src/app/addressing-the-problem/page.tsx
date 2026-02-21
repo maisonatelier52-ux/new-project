@@ -15,7 +15,7 @@ export default function CurrentCapabilities() {
 
       <div className="absolute top-8 right-16 z-20 flex items-center gap-3">
         <img
-          src="/images/Orinox-white-logo.png"
+          src="/images/orinox-white-logo.png"
           alt="Orinox Logo"
           className="h-12 w-auto"
         />
