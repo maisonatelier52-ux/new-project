@@ -6,7 +6,7 @@ export default function CurrentCapabilities() {
       <img
         src="/images/exploration-services.png"
         alt="Oil and Gas Facility"
-        className="absolute inset-0 h-full w-full object-fit"
+        className="absolute inset-0 h-full w-full object-cover"
       />
 
       {/* <div className="absolute inset-0 bg-black/40" /> */}

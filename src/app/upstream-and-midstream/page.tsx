@@ -5,7 +5,7 @@ export default function UpstreamAndMidstream() {
       <img
         src="/images/e-p.png"
         alt="Oil and Gas Facility"
-        className="absolute inset-0 h-full w-full object-fit"
+        className="absolute inset-0 h-full w-full object-cover"
       />
 
       <div className="relative z-10 h-screen flex flex-col">

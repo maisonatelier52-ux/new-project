@@ -6,7 +6,7 @@ export default function FutureCapabilities() {
       <img
         src="/images/orinox-working.jpg"
         alt="Oil and Gas Facility"
-        className="absolute inset-0 h-full w-full object-fit"
+        className="absolute inset-0 h-full w-full object-cover"
       />
 
 

@@ -4,7 +4,7 @@ export default function UpstreamAndMidstream() {
       <img
         src="/images/why-orinox.jpg"
         alt="Oil and Gas Facility"
-        className="absolute inset-0 h-full w-full object-fit"
+        className="absolute inset-0 h-full w-full object-cover"
       />
 
       <div className="absolute inset-0 bg-black/40" />
