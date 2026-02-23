@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function FutureCapabilities() {
+export default function OilAndGasProcessing() {
   return (
     <main className="relative h-screen w-full overflow-hidden">
       <img
@@ -9,7 +9,7 @@ export default function FutureCapabilities() {
         className="absolute inset-0 h-full w-full object-cover"
       />
 
-      {/* <div className="absolute inset-0 bg-black/40" /> */}
+      <div className="absolute inset-0 bg-black/4 0" />
 
       <div className="absolute top-8 right-16 z-20 flex items-center gap-3">
         <img

@@ -7,7 +7,7 @@ export default function Home() {
       <div className="w-full flex justify-end pr-24">
         <div className="flex items-center gap-4">
           {/* Logo icon */}
-          <Link href='/upstream-and-midstream'>
+          <Link href='/home'>
           <img
             src="/images/orinox-white-logo.png"
             alt="Orinox Logo"

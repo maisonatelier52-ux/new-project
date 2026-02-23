@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function FutureCapabilities() {
+export default function OnshoreOffshore() {
   return (
    <main className="relative h-screen w-full overflow-hidden">
       <img

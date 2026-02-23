@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function FutureCapabilities() {
+export default function OrinoxGlobalLocations() {
   return (
    <main className="relative h-screen w-full overflow-hidden">
       <img

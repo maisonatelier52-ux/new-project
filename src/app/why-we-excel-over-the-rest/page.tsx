@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function OurExpertise() {
+export default function WhyWeExcel() {
   return (
     <main className="relative h-screen w-full overflow-hidden">
       <img
@@ -9,7 +9,7 @@ export default function OurExpertise() {
         className="absolute inset-0 h-full w-full object-cover"
       />
 
-      <div className="absolute inset-0 bg-black/40" />
+      <div className="absolute inset-0 bg-black/20" />
 
       <div className="absolute top-8 right-16 z-20 flex items-center gap-3">
         <img

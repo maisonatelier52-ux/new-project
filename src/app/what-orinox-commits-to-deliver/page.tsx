@@ -1,4 +1,4 @@
-export default function UpstreamAndMidstream() {
+export default function OrinoxCommitsToDeliver() {
   return (
     <main className="relative h-screen w-full overflow-hidden">
       <img

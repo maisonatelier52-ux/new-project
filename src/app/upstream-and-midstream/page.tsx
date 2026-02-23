@@ -1,4 +1,4 @@
-export default function UpstreamAndMidstream() {
+export default function Upstream() {
   return (
     <main className="relative h-screen w-full overflow-hidden">
       {/* Background Image */}

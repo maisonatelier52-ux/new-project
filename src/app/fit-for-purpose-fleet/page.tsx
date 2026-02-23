@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function Future() {
+export default function FitForPurpose() {
   return (
     <main className="relative h-screen w-full overflow-hidden">
       <img
