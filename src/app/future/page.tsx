@@ -23,23 +23,23 @@ export default function Future() {
   
   {/* Badge */}
  <p className="inline-block w-fit bg-black/90 px-3 py-1 text-xs uppercase tracking-wide text-white/50 mb-1">
-  The Future
+THE FUTURE
 </p>
 
   {/* Heading */}
   <h1 className="text-2xl sm:text-3xl lg:text-3xl font-semibold leading-none mb-4">
-  Oil &amp; gas is transforming,
+Oil & gas is transforming,
   <br className="hidden sm:block" />
-  not disappearing.
+not disappearing.
 </h1>
 
   {/* Description */}
   <p className="text-[12px] text-white/50 leading-tight">
-    Global oil and gas demand forecasts with long plateau.
+   Global oil and gas demand forecasts with long plateau.
     <br />
-    Capital disciplined operators seeking higher productivity, lower emissions.
+Capital disciplined operators seeking higher productivity, lower emissions.
     <br />
-    Huge capex in brownfield optimization, CCUS, and infrastructure upgrade.
+Huge capex in brownfield optimization, CCUS, and infrastructure upgrade.
   </p>
 
 </div>

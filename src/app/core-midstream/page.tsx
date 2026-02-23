@@ -38,7 +38,7 @@ export default function CoreMidstream() {
            <br/>
       Gathering system concepts for new fields.
            <br/>
-         “Digital drilling centre” service for clients.
+         “Digital drilling center” service for clients.
           </p>
         </div>
         <div>

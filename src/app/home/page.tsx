@@ -72,7 +72,6 @@ export default function OrinoxHome() {
   <StorageSolutions/>
   <MarketinAndOfftake/>
 
-  {/* key differentiators */}
   <KeyDifferentiators/>
   <ModularityAndRapidDevelopment/>
   <IntegratedCrossSector/>

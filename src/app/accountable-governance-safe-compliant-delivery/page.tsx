@@ -37,15 +37,13 @@ export default function AccountableGovernance() {
             Government Interface & Reporting
           </h2>
           <p className="text-[12px] text-white/70 leading-tight">
-            Monthly HSE and progress reporting (with incident/near-miss
-            transparency).
+           Monthly HSE and progress reporting (with incident/near-miss transparency).
             <br />
-            Monthly HSE and progress reporting (with incident/near-miss
-            transparency).
+         Local content dashboard and supplier development status.
             <br />
-            Local content dashboard and supplier development status.
+        Environmental compliance reporting aligned to permit conditions.
             <br />
-            Local content dashboard and supplier development status.
+       Joint technical reviews at defined decision gates.
           </p>
         </div>
       </div>

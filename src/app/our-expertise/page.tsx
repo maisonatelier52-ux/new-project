@@ -29,7 +29,7 @@ OUR EXPERTISE
 
   {/* Heading */}
   <h1 className="text-[20px] lg:text-2xl font-semibold leading-none">
-  Exploration and Production (E&P) 
+Exploration and Production (E&P)
  
 </h1>
  </div>
@@ -39,14 +39,16 @@ OUR EXPERTISE
   <h2 className="text-[13px]">Exploration
     </h2>
   <p className="text-[12px] text-white/50 leading-tight">
-We are always searching for hydrocarbon resorvoirs using seismic surveys and other geological data.</p>
+  We are always searching for hydrocarbon reservoirs using seismic surveys and other geological data.
+  </p>
  
   </div>
    <div>
       <h2 className="text-[13px]">Production
   </h2>
   <p className="text-[12px] text-white/50 leading-tight">
-Our experienced team is known for drilling wells and developing facilities to extract crude oil and natural gas from the  ground, both  onshore  and offshore.</p>
+  Our experienced team is known for drilling wells and developing facilities to extract crude oil and natural gas from the ground, both onshore and offshore.
+  </p>
 
    </div>
 </div>

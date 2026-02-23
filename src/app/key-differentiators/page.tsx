@@ -27,37 +27,23 @@ export default function KeyDifferentiators() {
         </div>
         <div>
           <p className="text-[12px] text-white/80 leading-tight">
-            In a competitive industry, Orinox stands out by blending innovative
-            technology, sustainable practices, operational agility, and
-            cross-sector synergy.
+       In a competitive industry, Orinox stands out by blending innovative technology, sustainable practices, operational agility, and cross-sector synergy
           </p>
         </div>
 
         <div>
           <h2 className="text-white text-sm">
-            Advanced Technology & Digital Integration
+           Advanced Technology & Digital Integration
           </h2>
           <p className="text-[12px] text-white/80 leading-tight">
-            Orinox provides hydrocarbon storage at various points in the value
-            chain. For crude oil, we can build and manage tank farms – large
-            storage tank batteries at field terminals or hub locations. These
-            tanks buffer production, allow for blending, and ensure a ready
-            supply for shipment. For natural gas, Orinox could operate
-            underground gas storage reservoirs (depleted fields or salt caverns)
-            to help clients balance seasonal demand. Gas is often injected into
-            storage during low-demand periods and withdrawn in peak winter
-            times, and Orinox’s service would include managing these
-            injection/withdrawal cycles and maintaining gas deliverability.
+         Orinox is committed to leveraging the latest tech stack – from the drill bit to the pipeline. We deploy AI and Machine Learning for real-time drilling optimization and predictive maintenance. For example, our rigs use smart drilling systems that give drillers on-screen guidance, analyzing downhole parameters like delta-P, weight-on-bit, and bit rotation to maximize rate of penetration. This can significantly shorten drilling times and reduce costs. We incorporate Digital Twin simulations across operations: a digital twin of a drilling rig or production facility allows us to test scenarios and optimize without risking downtime. (An AI-powered digital twin of a drilling process can identify the optimal drilling speed and anticipate issues)
+
           </p>
         </div>
         <div>
           <p className="text-[12px] text-white/80 leading-tight">
-            Our production facilities have IoT sensors feeding cloud analytics
-            platforms so we can tweak processes continuously for efficiency.
-            Automation and Robotics are another pillar – Orinox invests in
-            automated pipe handling on rigs (e.g. robotic catwalks and iron
-            roughnecks) that not only speed up operations but also improve
-            safety.
+          Our production facilities have IoT sensors feeding cloud analytics platforms so we can tweak processes continuously for efficiency. Automation and Robotics are another pillar – Orinox invests in automated pipe handling on rigs (e.g. robotic catwalks and iron roughnecks) that not only speed up operations but also improve safety.
+          
           </p>
         </div>
       </div>

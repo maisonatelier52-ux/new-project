@@ -26,7 +26,7 @@ export default function Upstream() {
             {/* Upstream */}
             <div>
               <p className="text-white/70 text-[12px] mb-2">
-                Upstream (Exploration & Production)
+          Upstream (Exploration & Production)
               </p>
               <h1 className="text-white text-6xl font-light tracking-wide">
                 E&amp;P
@@ -36,7 +36,7 @@ export default function Upstream() {
             {/* Midstream */}
             <div>
               <p className="text-white/70 text-[12px] mb-2">
-                Midstream (Transportation & Storage)
+               Midstream (Transportation & Storage)
               </p>
               <h1 className="text-white text-6xl font-light tracking-wide">
                 T&amp;S
@@ -48,9 +48,7 @@ export default function Upstream() {
         {/* Bottom Right Description */}
         <div className="flex justify-end px-20 pb-14">
           <p className="max-w-xl text-right text-white/70 text-[12px] leading-tight">
-            ORINOX is a full-service oil drilling company operating across the
-            Upstream (Exploration & Production) and Midstream (Transportation &
-            Storage) segments of the oil and gas value chain.
+           ORINOX is a full-service oil drilling company operating across the Upstream (Exploration & Production) and Midstream (Transportation & Storage) segments of the oil and gas value chain.
           </p>
         </div>
       </div>

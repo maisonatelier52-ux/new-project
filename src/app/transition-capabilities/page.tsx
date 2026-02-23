@@ -38,7 +38,7 @@ export default function TransitionCapabilities() {
            <br/>
         AI/ML models for stuck-pipe risk, torque & drag, vibration monitoring.
            <br/>
-         “Digital drilling centre” service for clients.
+         “Digital drilling center” service for clients.
           </p>
         </div>
         <div>
