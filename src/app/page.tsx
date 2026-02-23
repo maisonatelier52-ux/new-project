@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <section className="min-h-screen w-full bg-black px-20 pt-20 text-white">
-      <div className="max-w-[1100px] mx-auto">
+      <div className="max-w-[1100px]">
         
         {/* Top bar */}
         <div className="flex justify-between items-start">
