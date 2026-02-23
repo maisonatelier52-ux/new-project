@@ -39,7 +39,7 @@ Light / medium / heavy land rigs      <br/>
           </p>
         </div>
         <div>
-          <h2 className="text-[13px] text-white/80">Specialisation</h2>
+          <h2 className="text-[13px] text-white/80">Specialization</h2>
           <p className="text-[12px] text-white/60 leading-tight">
 Conventional vertical drilling <br/>
  High-angle / horizontal <br/>

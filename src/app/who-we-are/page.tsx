@@ -28,19 +28,19 @@ WHO WE ARE
 
   {/* Heading */}
   <h1 className="text-2xl sm:text-3xl lg:text-3xl font-semibold leading-none mb-4">
-  Pricision Drilling &amp; 
+Precision Drilling &
   <br className="hidden sm:block" />
-  Low-Carbon Infastructure Partner
+Low-Carbon Infrastructure Partner
 </h1>
 
   {/* Description */}
-  <p className="mb-3 text-[14px]">High performance drilling and future-ready oil & gas infrastructure</p>
+  <p className="mb-3 text-[14px]">High-performance drilling and future-ready oil & gas infrastructure</p>
   <p className="text-[12px] text-white/50 leading-tight">
-    Specialist drilling and field development partner (Upstream & Near-Field Midstream).
+   Specialist drilling and field development partner (Upstream & Near-Field Midstream).
     <br />
-    Combining drilling excellence with digital optimization and low-carbon readiness.
+  Combining drilling excellence with digital optimization and low-carbon readiness.
     <br />
-   Targeting attractive IRRs across drilling, CCUS, and hydrogen-ready advisory.
+Targeting attractive IRRs across drilling, CCUS, and hydrogen-ready advisory.
   </p>
 
 </div>

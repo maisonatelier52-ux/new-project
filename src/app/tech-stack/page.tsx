@@ -47,7 +47,7 @@ Real-time data acquisition (WITSML/other standard) from rig sensors, MWD/LWD, an
           <h2 className="text-[13px] text-white/80">Digital drilling and performance analytics</h2>
           <p className="text-[12px] text-white/60 leading-tight">
 Central operations dashboard to monitor ROP, NPT, bit runs, and fuel consumption across rigs. <br/>
-Early-stage AI/ML models to flag anomalies and optimise drilling parameters.</p>
+Early-stage AI/ML models to flag anomalies and optimize drilling parameters.</p>
         </div>
       
        <div>
