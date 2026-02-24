@@ -17,7 +17,7 @@ export default function OrinoxCommitsToDeliver() {
         />
       </div>
 
-    <div className="absolute top-130 md:top-95 -translate-y-1/2 left-10 space-y-5 sm:left-10 lg:left-25 z-20   text-white flex flex-col">    
+    <div className="absolute top-130 md:top-95 -translate-y-1/2 left-10 space-y-3 md:space-y-5 sm:left-10 lg:left-25 z-20   text-white flex flex-col">    
    
 
   <div>

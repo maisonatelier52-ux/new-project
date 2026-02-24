@@ -19,7 +19,7 @@ export default function AccountableGovernance() {
         />
       </div>
 
-      <div className="absolute bottom-10 -translate-y-1/2 left-10 space-y-5 sm:left-10 lg:left-25 z-20  max-w-xs sm:max-w-md lg:max-w-xl text-white flex flex-col">
+      <div className="absolute bottom-10 -translate-y-1/2 left-10 space-y-3 md:space-y-5 sm:left-10 lg:left-25 z-20  max-w-xs sm:max-w-md lg:max-w-xl text-white flex flex-col">
         <div>
           <h2 className="text-white/80 text-[13px] font-semibold">
             Accountable Governance Structure for Safe, Compliant Delivery
