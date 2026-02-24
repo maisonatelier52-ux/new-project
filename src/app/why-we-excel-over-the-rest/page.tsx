@@ -19,7 +19,7 @@ export default function WhyWeExcel() {
         />
       </div>
 
-       <div className="absolute bottom-50 md:bottom-20 w-120 -translate-y-1/2 right-6 space-y-5 sm:right-10 lg:right-25 z-20  max-w-xs sm:max-w-md lg:max-w-xl text-white flex flex-col">    
+       <div className="absolute bottom-20 w-120 -translate-y-1/2 right-6 space-y-5 sm:right-10 lg:right-25 z-20  max-w-xs sm:max-w-md lg:max-w-xl text-white flex flex-col">    
  <div>
        <p className="inline-block w-fit  text-xs uppercase tracking-wide text-white/50 mb-1.5">
 WHY WE EXCEL OVER THE REST
