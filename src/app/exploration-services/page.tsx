@@ -19,7 +19,7 @@ export default function ExplorationServices() {
         />
       </div>
 
-  <div className="absolute bottom-10 md:bottom-0 -translate-y-1/2 left-10 space-y-5 sm:left-10 lg:left-25 z-20  max-w-xs sm:max-w-md lg:max-w-xl text-white flex flex-col">    
+  <div className="absolute bottom-30 md:bottom-0 -translate-y-1/2 left-10 space-y-5 sm:left-10 lg:left-25 z-20  max-w-xs sm:max-w-md lg:max-w-xl text-white flex flex-col">    
    <div>
       
           {/* Heading */}
