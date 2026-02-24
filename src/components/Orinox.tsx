@@ -11,7 +11,7 @@ export default function Orinox() {
           <img
             src="/images/orinox-white-logo.png"
             alt="Orinox Logo"
-            className="h-20 w-auto"
+            className="h-15 md:h-20 w-auto"
           />
           </Link>
         </div>
