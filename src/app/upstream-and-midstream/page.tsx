@@ -22,7 +22,7 @@ export default function Upstream() {
 
         {/* Right Side Middle Content */}
         <div className="flex-1 flex justify-end items-center ">
-          <div className="text-right space-y-5">
+          <div className="text-right space-y-3 md:space-y-5">
             {/* Upstream */}
             <div>
               <p className="text-white/70 text-[12px] mb-2">

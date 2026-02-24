@@ -19,7 +19,7 @@ export default function ExplorationAndProduction() {
         />
       </div>
 
-    <div className="absolute bottom-25 w-150 left-10 sm:left-10 lg:left-16 z-20 space-y-5 max-w-xs sm:max-w-md lg:max-w-xl text-white flex flex-col">
+    <div className="absolute bottom-25 w-150 left-10 sm:left-10 lg:left-16 z-20 space-y-3 md:space-y-5 max-w-xs sm:max-w-md lg:max-w-xl text-white flex flex-col">
   
   {/* Badge */}
  <div>

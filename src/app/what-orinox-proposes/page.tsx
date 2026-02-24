@@ -17,7 +17,7 @@ export default function WhatOrinoxProposes() {
         />
       </div>
 
-    <div className="absolute top-1/2 md:top-60 w-100 -translate-y-1/2 left-10 space-y-5 sm:left-10 lg:left-25 z-20  max-w-xs sm:max-w-md lg:max-w-xl text-white flex flex-col">    
+    <div className="absolute top-1/2 md:top-60 w-100 -translate-y-1/2 left-10 space-y-3 md:space-y-5 sm:left-10 lg:left-25 z-20  max-w-xs sm:max-w-md lg:max-w-xl text-white flex flex-col">    
    
 
   <div>

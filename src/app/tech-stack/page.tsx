@@ -19,7 +19,7 @@ export default function TechStack() {
         />
       </div>
 
-       <div className="absolute top-90 md:top-1/2  -translate-y-1/2 left-10 sm:left-10 lg:left-25 z-20 space-y-5 max-w-xs sm:max-w-md lg:max-w-xl text-white flex flex-col">      
+       <div className="absolute top-90 md:top-1/2  -translate-y-1/2 left-10 sm:left-10 lg:left-25 z-20 space-y-3 md:space-y-5 max-w-xs sm:max-w-md lg:max-w-xl text-white flex flex-col">      
       <div>
           <p className="inline-block text-xs uppercase tracking-wide text-white/50 mb-1">
   TECH STACK
