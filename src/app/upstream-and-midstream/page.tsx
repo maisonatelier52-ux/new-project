@@ -10,15 +10,7 @@ export default function Upstream() {
 
       <div className="relative z-10 h-screen flex flex-col px-10 md:px-20">
         {/* Top Right Logo */}
-        <div className="flex justify-end  pt-10">
-          <div className="flex items-center gap-3">
-            <img
-              src="/images/orinox-white-logo.png"
-              alt="Orinox Logo"
-              className="h-10 md:h-12 w-auto"
-            />
-          </div>
-        </div>
+     
 
         {/* Right Side Middle Content */}
         <div className="flex-1 flex justify-end items-center ">
