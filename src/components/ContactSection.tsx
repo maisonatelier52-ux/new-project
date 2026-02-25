@@ -1,7 +1,15 @@
-"use client"
+"use client";
 import { useState } from "react";
 
-export default function ContactSection() {
+type Errors = {
+  firstName?: string;
+  lastName?: string;
+  email?: string;
+  topic?: string;
+  message?: string;
+};
+
+export default function   ContactSection() {
   const [form, setForm] = useState({
     firstName: "",
     lastName: "",
@@ -10,34 +18,75 @@ export default function ContactSection() {
     message: "",
   });
 
-  const handleChange = ( e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+  const [errors, setErrors] = useState<Errors>({});
+  const [isLoading, setIsLoading] = useState(false);
+  const [isSuccess, setIsSuccess] = useState(false);
+
+  const handleChange = (
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >
+  ) => {
     setForm({ ...form, [e.target.name]: e.target.value });
+    setErrors({ ...errors, [e.target.name]: "" });
   };
 
-const handleSubmit = (e: React.SubmitEvent<HTMLFormElement>) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log(form);
+
+    const newErrors: Errors = {};
+
+    if (!form.email || !form.email.includes("@")) {
+      newErrors.email = "Enter an email address like example@mysite.com.";
+    }
+    if (!form.topic) {
+      newErrors.topic = "Choose an option.";
+    }
+    if (!form.message.trim()) {
+      newErrors.message = "Enter an answer.";
+    }
+
+    setErrors(newErrors);
+
+    if (Object.keys(newErrors).length > 0) return;
+
+    setIsLoading(true);
+    setIsSuccess(false);
+
+   setTimeout(() => {
+  setIsLoading(false);
+  setIsSuccess(true);
+
+  setForm({
+    firstName: "",
+    lastName: "",
+    email: "",
+    topic: "",
+    message: "",
+  });
+
+  console.log("Form submitted", form);
+}, 1000);
   };
 
   return (
-    <section className="w-full bg-black text-white py-24 px-6 md:px-20">
-      <div className="max-w-[1400px] mx-auto flex flex-col lg:flex-row gap-40">
+    <section className="w-full bg-black text-white py-50 px-8 md:px-16 lg:px-24">
+      <div className="mx-auto flex flex-col lg:flex-row gap-40">
 
         {/* LEFT CONTENT */}
         <div className="flex-1 flex flex-col justify-center">
-          <h2 className="text-4xl md:text-6xl lg:text-[68px] font-bold leading-none mb-8">
-            Connect with our
-            petroleum experts.
+          <h2 className="text-4xl md:text-6xl lg:text-[62px] font-bold leading-none mb-8">
+            Connect with our <br /> petroleum experts.
           </h2>
 
-          <p className="text-white/90 text-[15px] leading-tight max-w-[520px]">
+          <p className="text-white/90 text-[15px] leading-tight">
             Facilitating upstream exploration and midstream infrastructure
             projects through precision engineering and technical advisory.
           </p>
         </div>
 
         {/* RIGHT FORM */}
-        <div className="flex-1 ">
+        <div className="flex-1">
           <p className="text-white mb-6">
             We'd love to hear from you. Send us a message and we'll respond as soon as possible.
           </p>
@@ -46,76 +95,120 @@ const handleSubmit = (e: React.SubmitEvent<HTMLFormElement>) => {
 
             {/* Name Row */}
             <div className="flex flex-col md:flex-row gap-4">
+              {/* First Name */}
               <div className="flex-1">
-                <label className="text-sm text-white">First name</label>
+                <label className="text-sm">First name</label>
                 <input
                   name="firstName"
+                  value={form.firstName}
                   onChange={handleChange}
                   placeholder="Enter your first name"
-                  className="w-full mt-2 bg-transparent border border-white/30 rounded-md px-4 py-3 focus:outline-none focus:border-white"
+                  className="w-full mt-2 bg-transparent border border-white rounded-md px-4 py-3
+                    placeholder:text-white/90 focus:outline-none"
                 />
               </div>
 
+              {/* Last Name */}
               <div className="flex-1">
-                <label className="text-sm text-white">Last name</label>
+                <label className="text-sm">Last name</label>
                 <input
                   name="lastName"
+                  value={form.lastName}
                   onChange={handleChange}
                   placeholder="Enter your last name"
-                  className="w-full mt-2 bg-transparent border border-white/30 rounded-md px-4 py-3 focus:outline-none focus:border-white"
+                  className="w-full mt-2 bg-transparent border border-white rounded-md px-4 py-3
+                    placeholder:text-white/90 focus:outline-none"
                 />
               </div>
             </div>
 
             {/* Email */}
             <div>
-              <label className="text-sm text-white">Email *</label>
+              <label className="text-sm">Email *</label>
               <input
                 name="email"
                 type="email"
+                value={form.email}
                 onChange={handleChange}
                 placeholder="Enter your email"
-                className="w-full mt-2 bg-transparent border border-white/30 rounded-md px-4 py-3 focus:outline-none focus:border-white"
+                className={`w-full mt-2 bg-transparent border rounded-md px-4 py-3
+                  placeholder:text-white/90 focus:outline-none
+                  ${errors.email ? "border-red-500" : "border-white"}`}
               />
+              {errors.email && (
+                <p className="mt-2 text-red-500 text-sm">ⓘ {errors.email}</p>
+              )}
             </div>
 
             {/* Topic */}
             <div>
-              <label className="text-sm text-white">
-                How can we help you? *
-              </label>
+              <label className="text-sm">How can we help you? *</label>
               <select
                 name="topic"
+                value={form.topic}
                 onChange={handleChange}
-                className="w-full mt-2 bg-transparent text-white/50 border border-white/30 rounded-md px-4 py-3 focus:outline-none focus:border-white "
+                className={`w-full mt-2 bg-transparent rounded-md px-4 py-3
+                  ${errors.topic ? "border border-red-500" : "border border-white"}`}
               >
-                <option className="text-black">Select a topic</option>
+                <option value="" className="text-black">
+                  Select a topic
+                </option>
                 <option className="text-black">Exploration</option>
                 <option className="text-black">Production</option>
                 <option className="text-black">Midstream</option>
                 <option className="text-black">Technical Advisory</option>
               </select>
+              {errors.topic && (
+                <p className="mt-2 text-red-500 text-sm">ⓘ {errors.topic}</p>
+              )}
             </div>
 
             {/* Message */}
             <div>
-              <label className="text-sm text-white">Message *</label>
+              <label className="text-sm">Message *</label>
               <textarea
                 name="message"
+                rows={3}
+                value={form.message}
                 onChange={handleChange}
-                rows={5}
                 placeholder="Tell us how we can help you"
-                className="w-full mt-2 bg-transparent border  border-white/30 rounded-md px-4 py-3 focus:outline-none focus:border-white"
+                className={`w-full mt-2 bg-transparent rounded-md px-4 py-3
+                  placeholder:text-white/90 focus:outline-none
+                  ${errors.message ? "border border-red-500" : "border border-white"}`}
               />
+              {errors.message && (
+                <p className="mt-2 text-red-500 text-sm">ⓘ {errors.message}</p>
+              )}
             </div>
 
-            {/* Submit */}
+            <div className="space-y-4">
             <button
-              type="submit"
-              className="w-full bg-[#0b2a4a] hover:bg-[#123a63] transition py-4 rounded-md font-medium text-lg"
-            >
-              Submit
-            </button>
+  type="submit"
+  disabled={isLoading}
+  className={`w-full h-[56px] flex items-center justify-center rounded-md
+    font-medium text-lg transition
+    ${isLoading
+      ? "bg-[#0b2a4a]/70 cursor-not-allowed"
+      : "bg-[#0b2a4a] hover:bg-[#123a63]"}`}
+>
+  <div className="relative flex items-center justify-center">
+  
+    <span className={`transition-opacity ${isLoading ? "opacity-0" : "opacity-100"}`}>
+      Submit
+    </span>
+
+    {isLoading && (
+      <span className="absolute h-6 w-6 rounded-full border-2 border-white/30 border-t-white animate-spin" />
+    )}
+  </div>
+</button> 
+              {isSuccess && (
+                <p className="text-center text-white text-base">
+                  Thanks, we received your submission.
+                </p>
+              )}
+            </div>
+
           </form>
         </div>
       </div>

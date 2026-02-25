@@ -2,28 +2,28 @@ import Image from "next/image";
 
 export default function CoreOperationalSectors() {
   return (
-    <section className="w-full bg-black text-white py-28 px-6 md:px-20">
+    <section className="w-full bg-black text-white py-20 px-8 md:px-16 lg:px-24">
       <div className="max-w-full mx-auto flex flex-col items-center text-center">
 
         {/* Heading */}
-       <div className="max-w-200">
-         <h1 className="text-4xl  md:text-6xl lg:text-[68px] leading-none font-bold mb-9">
+       <div className="max-w-150">
+         <h1 className="text-4xl  md:text-6xl lg:text-[62px] leading-none font-bold mb-7">
    Core Operational
    <br/> Sectors
         </h1>
 
         {/* Description */}
-        <p className="text-[18px] text-white/90 leading-tight max-w-212.5 mb-10">
+        <p className="text-[14px] text-white/90 leading-tight max-w-212.5 mb-15">
       Driving technical excellence across the integrated oil and gas value chain with precision-led infrastructure solutions. </p>
 
        </div>
       
-<section className="w-full py-10 px-6 md:px-20">
+<section className="w-full py-10 ">
   <div className="max-w-[1100px] mx-auto flex flex-col md:flex-row justify-between gap-20">
 
     {/* COLUMN 1 */}
     <div className="flex-1 flex flex-col items-start text-left">
-      <div className="mb-16 opacity-60">
+      <div className="mb-20 opacity-60">
         <Image
           src="/images/exploration.png"
           alt="Exploration"
@@ -32,7 +32,7 @@ export default function CoreOperationalSectors() {
         />
       </div>
 
-      <h3 className="text-3xl font-bold mb-6 text-left">
+      <h3 className="text-3xl font-bold mb-12 text-left">
         Exploration
       </h3>
 
@@ -48,7 +48,7 @@ export default function CoreOperationalSectors() {
 
     {/* COLUMN 2 */}
     <div className="flex-1 flex flex-col items-start text-left">
-      <div className="mb-16 opacity-60">
+      <div className="mb-20 opacity-60">
         <Image
           src="/images/production.png"
           alt="Production"
@@ -57,7 +57,7 @@ export default function CoreOperationalSectors() {
         />
       </div>
 
-      <h3 className="text-3xl font-bold mb-6 text-left">
+      <h3 className="text-3xl font-bold mb-12 text-left">
         Production
       </h3>
 
@@ -73,7 +73,7 @@ export default function CoreOperationalSectors() {
 
     {/* COLUMN 3 */}
     <div className="flex-1 flex flex-col items-start text-left">
-      <div className="mb-16 opacity-60">
+      <div className="mb-20 opacity-60">
         <Image
           src="/images/midstreamlogistics.png"
           alt="Midstream"
@@ -82,7 +82,7 @@ export default function CoreOperationalSectors() {
         />
       </div>
 
-      <h3 className="text-3xl font-bold mb-6 text-left">
+      <h3 className="text-3xl font-bold mb-12 text-left">
         Midstream Logistics
       </h3>
 <p className="text-[15px] text-white/90 leading-tight mb-10 text-left min-h-[80px]">

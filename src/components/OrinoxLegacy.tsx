@@ -1,15 +1,15 @@
 export default function OrinoxLegacy() {
   return (
-    <section className="w-full bg-black py-24 px-8 md:px-16 lg:px-24">
+    <section className="w-full bg-black py-40 px-8 md:px-16 lg:px-24">
       <div className="max-w-[560px]">
 
         {/* Headline - appears immediately */}
-        <h1 className="text-5xl md:text-6xl font-bold text-white">
+        <h1 className="text-5xl md:text-[60px] font-bold text-white">
           The Orinox Legacy
         </h1>
 
         {/* Paragraphs - animate from bottom */}
-        <div className="mt-10  text-[14px] text-white space-y-4">
+        <div className="mt-10  text-[15px] text-white space-y-4">
 
           <p className="opacity-0 fade-up">
             Orinox Holding was founded with a clear mandate: to deliver technical excellence and
