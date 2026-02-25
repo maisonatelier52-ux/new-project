@@ -15,7 +15,7 @@ export default function OrinoxGlobalLocations() {
         
       </div>
 
-        <div className="absolute bottom-20 md:bottom-0 -translate-y-1/2 right-6 space-y-3 md:space-y-5 sm:right-10 lg:right-25 z-20  max-w-xs sm:max-w-md lg:max-w-xl text-white flex flex-col">    
+        <div className="absolute bottom-10 md:bottom-0 -translate-y-1/2 right-6 space-y-3 md:space-y-5 sm:right-10 lg:right-25 z-20  max-w-xs sm:max-w-md lg:max-w-xl text-white flex flex-col">    
 
 
   <div>

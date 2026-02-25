@@ -10,6 +10,7 @@ import Orinox1 from "@/components/Orinox1";
 import OrinoxLegacy from "@/components/OrinoxLegacy";
 import QuoteSection from "@/components/QuoteSection";
 import SafetyAtScale from "@/components/SafetyAtScale";
+import StrategicLeadership from "@/components/StrategicLeadership";
 import TechnicalAndMidstream from "@/components/TechnicalAndMidstream";
 
 export default function About() {
@@ -20,11 +21,12 @@ export default function About() {
     <OrinoxLegacy/>
     <MissionVision/>
     <CoreValues/>
+    <StrategicLeadership/>
     <AdvancingFrontier/>
     <IntegratedInfrastructure/>
     <CoreOperationalSectors/>
     <TechnicalAndMidstream/>
-    <SafetyAtScale/>
+    {/* <SafetyAtScale/> */}
     <GlobalFootprint/>
     <ContactSection/>
     <QuoteSection/>
