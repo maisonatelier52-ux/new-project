@@ -66,15 +66,20 @@ export default function   ContactSection() {
   });
 
   console.log("Form submitted", form);
+
+  // Hide success message after 3 seconds
+  setTimeout(() => {
+    setIsSuccess(false);
+  }, 3000);
 }, 1000);
   };
 
   return (
-    <section className="w-full bg-black text-white py-50 px-8 md:px-16 lg:px-24">
-      <div className="mx-auto flex flex-col lg:flex-row gap-40">
+    <section className="w-full bg-black text-white py-40 px-8 md:px-16 lg:px-24">
+      <div className="mx-auto flex flex-col lg:flex-row items-start gap-40 py-10">
 
         {/* LEFT CONTENT */}
-        <div className="flex-1 flex flex-col justify-center">
+        <div className="flex-1 flex flex-col pt-4 lg:pt-14">
           <h2 className="text-4xl md:text-6xl lg:text-[62px] font-bold leading-none mb-8">
             Connect with our <br /> petroleum experts.
           </h2>
@@ -133,10 +138,10 @@ export default function   ContactSection() {
                 placeholder="Enter your email"
                 className={`w-full mt-2 bg-transparent border rounded-md px-4 py-3
                   placeholder:text-white/90 focus:outline-none
-                  ${errors.email ? "border-red-500" : "border-white"}`}
+                  ${errors.email ? "border-red-700" : "border-white"}`}
               />
               {errors.email && (
-                <p className="mt-2 text-red-500 text-sm">ⓘ {errors.email}</p>
+                <p className="mt-2 text-red-700 text-[12px] font-light">ⓘ {errors.email}</p>
               )}
             </div>
 
@@ -148,7 +153,7 @@ export default function   ContactSection() {
                 value={form.topic}
                 onChange={handleChange}
                 className={`w-full mt-2 bg-transparent rounded-md px-4 py-3
-                  ${errors.topic ? "border border-red-500" : "border border-white"}`}
+                  ${errors.topic ? "border border-red-700" : "border border-white"}`}
               >
                 <option value="" className="text-black">
                   Select a topic
@@ -159,7 +164,7 @@ export default function   ContactSection() {
                 <option className="text-black">Technical Advisory</option>
               </select>
               {errors.topic && (
-                <p className="mt-2 text-red-500 text-sm">ⓘ {errors.topic}</p>
+                <p className="mt-2 text-red-700 text-[12px] font-light">ⓘ {errors.topic}</p>
               )}
             </div>
 
@@ -174,10 +179,10 @@ export default function   ContactSection() {
                 placeholder="Tell us how we can help you"
                 className={`w-full mt-2 bg-transparent rounded-md px-4 py-3
                   placeholder:text-white/90 focus:outline-none
-                  ${errors.message ? "border border-red-500" : "border border-white"}`}
+                  ${errors.message ? "border border-red-700" : "border border-white"}`}
               />
               {errors.message && (
-                <p className="mt-2 text-red-500 text-sm">ⓘ {errors.message}</p>
+                <p className="mt-2 text-red-700 text-[12px] font-light">ⓘ {errors.message}</p>
               )}
             </div>
 
@@ -185,7 +190,7 @@ export default function   ContactSection() {
             <button
   type="submit"
   disabled={isLoading}
-  className={`w-full h-[56px] flex items-center justify-center rounded-md
+  className={`w-full h-[56px] cursor-pointer flex items-center justify-center rounded-md
     font-medium text-lg transition
     ${isLoading
       ? "bg-[#0b2a4a]/70 cursor-not-allowed"

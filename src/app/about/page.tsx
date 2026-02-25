@@ -26,7 +26,6 @@ export default function About() {
     <IntegratedInfrastructure/>
     <CoreOperationalSectors/>
     <TechnicalAndMidstream/>
-    {/* <SafetyAtScale/> */}
     <GlobalFootprint/>
     <ContactSection/>
     <QuoteSection/>
