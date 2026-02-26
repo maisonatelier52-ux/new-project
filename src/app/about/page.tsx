@@ -7,6 +7,7 @@ import GlobalFootprint from "@/components/GlobalFootprint";
 import IntegratedInfrastructure from "@/components/IntegratedInfrastructure";
 import MissionVision from "@/components/MissionVision";
 import Orinox1 from "@/components/Orinox1";
+import OrinoxAbout from "@/components/OrinoxAbout";
 import OrinoxLegacy from "@/components/OrinoxLegacy";
 import QuoteSection from "@/components/QuoteSection";
 import SafetyAtScale from "@/components/SafetyAtScale";
@@ -16,10 +17,10 @@ import TechnicalAndMidstream from "@/components/TechnicalAndMidstream";
 export default function About() {
   return (
    <>
-    <Orinox1 />
-    <div className="h-130 bg-black"/>
+    <OrinoxAbout />
+    <div className="h-0 md:h-130 bg-black"/>
     <OrinoxLegacy/>
-    <MissionVision/>
+    <MissionVision/>  
     <CoreValues/>
     <StrategicLeadership/>
     <AdvancingFrontier/>
