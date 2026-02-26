@@ -2,9 +2,9 @@ import Image from "next/image";
 
 export default function AdvancingFrontier() {
   return (
-    <section className="w-full bg-black text-white pt-40 px-6 md:px-20">
+    <section className="w-full bg-black text-white pt-5 md:pt-40 px-6 md:px-20">
       <div className=" mx-auto flex flex-col items-center text-center">
-        <h1 className="text-4xl md:text-6xl lg:text-[86px] leading-none font-bold mb-9">
+        <h1 className="text-[32px] md:text-6xl lg:text-[86px] leading-none font-bold  mb-4 md:mb-9">
           Advancing the Frontier of Petroleum Infrastructure
         </h1>
         <p className="text-[18px] text-white/90 leading-tight max-w-212.5 mb-10">
@@ -27,7 +27,7 @@ export default function AdvancingFrontier() {
             Contact Experts
           </a>
         </div>
-        <div className="w-full rounded-sm overflow-hidden shadow-sm">
+        <div className="w-full rounded-lg overflow-hidden shadow-sm">
           <Image
             src="/images/advancing-frontier.webp"
             alt="Petroleum Infrastructure"

@@ -1,20 +1,35 @@
+"use client"
+import { motion } from "framer-motion";
+
 export default function StrategicLeadership() {
   return (
-    <section className="w-full bg-black text-white py-40  px-8 md:px-16 lg:px-24">
+    <section className="w-full bg-black text-white py-20 md:py-40  px-8 md:px-16 lg:px-24">
       <div className="max-w-[1200px] mx-auto flex">
 
         {/* Content */}
         <div className="flex flex-col max-w-[520px]">
 
           {/* Heading */}
-          <h2 className="text-5xl md:text-6xl lg:text-[64px] leading-[1.05] font-bold mb-10">
-            Strategic <br /> Leadership
-          </h2>
+          <motion.h2 
+            initial={{ y: 50, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: true }}
+                      transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+            className="text-[35px] md:text-6xl lg:text-[64px] leading-[1.05] font-bold mb-4 md:mb-10"
+          >
+            Strategic  Leadership
+          </motion.h2>
 
           {/* Paragraph */}
-          <p className="text-[15px] leading-tight text-white/90 mb-12">
+          <motion.p 
+            initial={{ y: 40, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+            className="text-[15px] leading-tight text-white/90 mb-10 md:mb-12"
+          >
             Orinox is guided by a team of industry veterans with deep expertise in petroleum engineering and midstream infrastructure. Our leadership is committed to transparency, technical innovation, and delivering the highest level of resource security to our global partners.
-          </p>
+          </motion.p>
 
           {/* Button */}
           <a

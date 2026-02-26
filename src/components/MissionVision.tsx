@@ -1,31 +1,46 @@
+"use client"
+import { motion } from "framer-motion";
+
 export default function MissionVision() {
   return (
-    <section className="w-full bg-black text-white py-30 px-8 md:px-16 lg:px-24">
+    <section className="w-full bg-black text-white py-6 md:py-30 px-8 md:px-16 lg:px-24">
       <div className="max-w-[1200px] mx-auto ">
         
         {/* Flex container */}
-        <div className="flex flex-col md:flex-row md:justify-between  gap-16 md:gap-0">
+        <div className="flex flex-col md:flex-row md:justify-between  gap-10 md:gap-0">
 
           {/* Mission */}
           <div className="md:w-1/2">
-            <p className="text-[13px] tracking-[0.25em] text-white/70 mb-8">
+            <p className="text-[13px] tracking-[0.25em] text-white/70 mb-4 md:mb-8">
               MISSION
             </p>
 
-            <h2 className="text-3xl md:text-4xl lg:text-[35px] leading-[1.1] font-normal max-w-140">
+            <motion.h2 
+              initial={{ y: 40, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              viewport={{ once: true }}
+                           transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+              className="text-[26px] md:text-4xl lg:text-[35px] leading-[1.1] font-normal max-w-140"
+            >
               To deliver high-precision infrastructure and technical reliability across the global energy value chain.
-            </h2>
+            </motion.h2>
           </div>
 
           {/* Vision */}
           <div className="md:w-1/2">
-            <p className="text-[13px] tracking-[0.25em] text-white/70 mb-8">
+            <p className="text-[13px] tracking-[0.25em] text-white/70 mb-4 md:mb-8">
               VISION
             </p>
 
-            <h2 className="text-3xl md:text-4xl lg:text-[35px] leading-[1.1] font-normal max-w-140">
+            <motion.h2 
+              initial={{ y: 40, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              viewport={{ once: true }}
+                transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+              className="text-[26px] md:text-4xl lg:text-[35px] leading-[1.1] font-normal max-w-140"
+            >
               Setting the global standard for operational transparency and technical mastery in petroleum logistics.
-            </h2>
+            </motion.h2>
           </div>
 
         </div>
