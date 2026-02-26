@@ -248,7 +248,7 @@ export default function OrinoxAbout() {
           </div>
 
           {/* Bottom Actions */}
-          <div className="mt-16 flex flex-col sm:flex-row justify-end gap-4">
+          <div className="mt-10 md:mt-16 flex flex-col sm:flex-row justify-end gap-4">
             <a href="/pdf/orinox.pdf" className="text-center rounded-md border border-white/60 px-6 py-2 text-[12px]" download>
               Download Orinox
             </a>
