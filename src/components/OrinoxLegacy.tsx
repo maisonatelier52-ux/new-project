@@ -4,13 +4,13 @@ import { motion } from "framer-motion";
 
 export default function OrinoxLegacy() {
   return (
-    <section className="w-full bg-black px-8 md:px-16 lg:px-28 py-24">
-      <div className="mx-auto max-w-7xl flex flex-col lg:flex-row items-center gap-14 lg:gap-28">
+    <section className="w-full bg-black px-8 md:px-16 lg:px-28 h-screen flex items-center justify-center snap-start flex flex-col gap-20">
+      <div className="mx-auto max-w-7xl flex flex-col lg:flex-row items-center  gap-14 lg:gap-28 w-full">
 
         {/* LEFT CONTENT */}
         <div className="flex-1 max-w-[580px]">
-          <h1 className="text-[38px] md:text-[64px] font-bold text-white leading-[1.0] mb-8">
-            The Orinox Legacy
+          <h1 className="text-[38px] md:text-[50px] max-w-100 font-bold text-white/80 leading-[1.0] mb-8">
+            THE ORINOX LEGACY
           </h1>
 
           <div className="text-[13px] md:text-[12px] text-white/85 space-y-7">
@@ -60,6 +60,45 @@ export default function OrinoxLegacy() {
         </motion.div>
 
       </div>
+      
+        {/* Flex container */}
+        <div className="flex flex-col md:flex-row md:justify-between  gap-10 md:gap-28">
+
+          {/* Mission */}
+          <div className="md:w-1/2">
+            <p className="text-[13px] tracking-[0.25em] text-white/70 mb-4 md:mb-8">
+              MISSION
+            </p>
+
+            <motion.h2 
+              initial={{ y: 40, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              viewport={{ once: true }}
+                           transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+              className="text-[26px] md:text-4xl lg:text-[18px] text-white/70 leading-[1.1] font-normal "
+            >
+              To deliver high-precision infrastructure and technical reliability across the global energy value chain.
+            </motion.h2>
+          </div>
+
+          {/* Vision */}
+          <div className="md:w-1/2">
+            <p className="text-[13px] tracking-[0.25em] text-white/70 mb-4 md:mb-8">
+              VISION
+            </p>
+
+            <motion.h2 
+              initial={{ y: 40, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              viewport={{ once: true }}
+                transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+              className="text-[26px] md:text-4xl lg:text-[18px] text-white/70 leading-[1.1] font-normal"
+            >
+              Setting the global standard for operational transparency and technical mastery in petroleum logistics.
+            </motion.h2>
+          </div>
+
+        </div>
     </section>
   );
 }

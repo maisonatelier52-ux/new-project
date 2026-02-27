@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 
 export default function CoreOperationalSectors() {
   return (
-    <section className="w-full bg-black text-white  pt-20 pb-10 md:pb-20 md:pt-20 px-8 md:px-16 lg:px-24">
-      <div className="max-w-full mx-auto flex flex-col items-center text-center">
+    <section className="w-full bg-black text-white h-screen flex items-center px-8 md:px-16 lg:px-28 snap-start">
+      <div className="max-w-full mx-auto flex flex-col items-center  text-center">
 
         {/* Heading */}
         <div className="max-w-full md:max-w-150">
@@ -14,14 +14,14 @@ export default function CoreOperationalSectors() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
                     transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-            className="text-[30px] md:text-6xl lg:text-[62px] leading-none font-bold mb-7"
+            className="text-[30px] md:text-6xl lg:text-[40px] text-white/90 leading-none font-bold mb-5"
           >
             Core Operational
          Sectors
           </motion.h1>
 
           {/* Description */}
-          <p className="text-[15px] text-white/90 leading-tight max-w-212.5 mb-4 md:mb-15">
+          <p className="text-[13px] text-white/90 leading-tight max-w-212.5 mb-4 md:mb-12">
             Driving technical excellence across the integrated oil and gas value chain with precision-led infrastructure solutions. 
           </p>
         </div>
@@ -30,8 +30,8 @@ export default function CoreOperationalSectors() {
           <div className="max-w-[1100px] mx-auto flex flex-col md:flex-row justify-between gap-12 md:gap-20">
 
             {/* COLUMN 1 */}
-            <div className="flex-1 flex flex-col items-center text-center md:items-start md:text-left">
-              <div className="mb-10 md:mb-20 opacity-60 overflow-hidden">
+            <div className="flex-1 flex flex-col items-center text-center ">
+              <div className="mb-10 md:mb-10 opacity-60 overflow-hidden">
                 <motion.div
                   initial={{ x: "-100%", opacity: 0 }}
                   whileInView={{ x: 0, opacity: 1 }}
@@ -47,11 +47,11 @@ export default function CoreOperationalSectors() {
                 </motion.div>
               </div>
 
-              <h3 className="text-3xl font-bold mb-4 md:mb-12">
-                Exploration
+              <h3 className="text-[23px] font-bold mb-4">
+                EXPLORATION
               </h3>
 
-              <p className="text-[15px] text-white/90 leading-tight mb-5 md:mb-10 min-h-[80px]">
+              <p className="text-[12px] text-white/90 leading-tight mb-5 md:mb-7 min-h-[30px]">
                 Identification and assessment of high-potential upstream assets leveraging advanced geological modeling and seismic evaluation protocols.
               </p>
 
@@ -62,8 +62,8 @@ export default function CoreOperationalSectors() {
 
 
             {/* COLUMN 2 */}
-            <div className="flex-1 flex flex-col items-center text-center md:items-start md:text-left">
-              <div className="mb-10 md:mb-20 opacity-60 overflow-hidden">
+            <div className="flex-1 flex flex-col items-center text-center">
+              <div className="mb-10 md:mb-10 opacity-60 overflow-hidden">
                 <motion.div
                   initial={{ x: "-100%", opacity: 0 }}
                   whileInView={{ x: 0, opacity: 1 }}
@@ -79,11 +79,11 @@ export default function CoreOperationalSectors() {
                 </motion.div>
               </div>
 
-              <h3 className="text-3xl font-bold mb-4 md:mb-12">
-                Production
+              <h3 className="text-[23px] font-bold mb-4">
+                PRODUCTION
               </h3>
 
-              <p className="text-[15px] text-white/90 leading-tight mb-5 md:mb-10 min-h-[80px]">
+              <p className="text-[12px] text-white/90 leading-tight mb-5 md:mb-7 min-h-[30px]">
                 Optimizing asset lifecycle yields through innovative field development techniques and high-integrity rig infrastructure management.
               </p>
 
@@ -94,8 +94,8 @@ export default function CoreOperationalSectors() {
 
 
             {/* COLUMN 3 */}
-            <div className="flex-1 flex flex-col items-center text-center md:items-start md:text-left">
-              <div className="mb-10 md:mb-20 opacity-60 overflow-hidden">
+            <div className="flex-1 flex flex-col items-center text-center ">
+              <div className="mb-10 md:mb-12 opacity-60 overflow-hidden">
                 <motion.div
                   initial={{ x: "-100%", opacity: 0 }}
                   whileInView={{ x: 0, opacity: 1 }}
@@ -111,10 +111,10 @@ export default function CoreOperationalSectors() {
                 </motion.div>
               </div>
 
-              <h3 className="text-3xl font-bold mb-4 md:mb-12">
-                Midstream Logistics
+              <h3 className="text-[23px] font-bold mb-4 ">
+                MIDSTREAM LOGISTICS
               </h3>
-              <p className="text-[15px] text-white/90 leading-tight mb-5 md:mb-10 min-h-[80px]">
+              <p className="text-[12px] text-white/90 leading-tight mb-5 md:mb-7 min-h-[30px]">
                 Engineering resilient midstream infrastructure for the secure and reliable transportation of global petroleum resources across vast networks.
               </p>
 

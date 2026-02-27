@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export default function MissionVision() {
   return (
-    <section className="w-full bg-black text-white py-6 md:py-30 px-8 md:px-16 lg:px-24">
+    <section className="w-full bg-black text-white py-6 md:py-15 px-8 md:px-16 lg:px-24 snap-start">
       <div className="max-w-[1200px] mx-auto ">
         
         {/* Flex container */}
@@ -20,7 +20,7 @@ export default function MissionVision() {
               whileInView={{ y: 0, opacity: 1 }}
               viewport={{ once: true }}
                            transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-              className="text-[26px] md:text-4xl lg:text-[35px] leading-[1.1] font-normal max-w-140"
+              className="text-[26px] md:text-4xl lg:text-[30px] leading-[1.1] font-normal max-w-120"
             >
               To deliver high-precision infrastructure and technical reliability across the global energy value chain.
             </motion.h2>
@@ -37,7 +37,7 @@ export default function MissionVision() {
               whileInView={{ y: 0, opacity: 1 }}
               viewport={{ once: true }}
                 transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-              className="text-[26px] md:text-4xl lg:text-[35px] leading-[1.1] font-normal max-w-140"
+              className="text-[26px] md:text-4xl lg:text-[30px] leading-[1.1] font-normal max-w-120"
             >
               Setting the global standard for operational transparency and technical mastery in petroleum logistics.
             </motion.h2>
@@ -45,6 +45,7 @@ export default function MissionVision() {
 
         </div>
       </div>
+      
     </section>
   );
 } 
