@@ -76,7 +76,7 @@ export default function ContactSection() {
   };
 
   return (
-    <section className="w-full bg-black text-white py-0 px-8 md:px-16 lg:px-24">
+    <section className="w-full bg-black text-white py-0 px-8 md:px-16 lg:px-24 snap-start">
       <div className="mx-auto flex flex-col lg:flex-row items-start gap-10 md:gap-40 py-10">
 
         {/* RIGHT FORM - Order 1 on Mobile, 2 on Large */}
@@ -87,48 +87,48 @@ export default function ContactSection() {
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
           className="flex-1 order-1 lg:order-2"
         >
-          <p className="text-white mb-6">
+          <p className="text-white text-[12px] max-w-100  mb-6">
             We'd love to hear from you. Send us a message and we'll respond as soon as possible.
           </p>
 
-          <form onSubmit={handleSubmit} className="space-y-6">
+          <form onSubmit={handleSubmit} className="space-y-4">
             {/* ... form content ... */}
             {/* Name Row */}
             <div className="flex flex-col md:flex-row gap-4">
               <div className="flex-1">
-                <label className="text-sm">First name</label>
-                <input name="firstName" value={form.firstName} onChange={handleChange} placeholder="Enter your first name" className="w-full mt-2 bg-transparent border border-white rounded-md px-4 py-3 placeholder:text-white/90 focus:outline-none" />
+                <label className="text-[12px]">First name</label>
+                <input name="firstName" value={form.firstName} onChange={handleChange} placeholder="Enter your first name" className="w-full mt-2 bg-transparent border border-white/30 rounded-md px-4 py-2 placeholder:text-white/60 placeholder:text-[12px]  focus:outline-none" />
               </div>
               <div className="flex-1">
-                <label className="text-sm">Last name</label>
-                <input name="lastName" value={form.lastName} onChange={handleChange} placeholder="Enter your last name" className="w-full mt-2 bg-transparent border border-white rounded-md px-4 py-3 placeholder:text-white/90 focus:outline-none" />
+                <label className="text-[12px]">Last name</label>
+                <input name="lastName" value={form.lastName} onChange={handleChange} placeholder="Enter your last name" className="w-full mt-2 bg-transparent border border-white/30 rounded-md px-4 py-2 placeholder:text-white/60 placeholder:text-[12px]  focus:outline-none" />
               </div>
             </div>
             <div>
-              <label className="text-sm">Email *</label>
-              <input name="email" type="email" value={form.email} onChange={handleChange} placeholder="Enter your email" className={`w-full mt-2 bg-transparent border rounded-md px-4 py-3 placeholder:text-white/90 focus:outline-none ${errors.email ? "border-red-700" : "border-white"}`} />
-              {errors.email && <p className="mt-2 text-red-700 text-[12px] font-light">ⓘ {errors.email}</p>}
+              <label className="text-[12px]">Email *</label>
+              <input name="email" type="email" value={form.email} onChange={handleChange} placeholder="Enter your email" className={`w-full mt-2 bg-transparent border  rounded-md px-4 py-2 placeholder:text-white/60 placeholder:text-[12px]  focus:outline-none ${errors.email ? "border-red-900" : "border-white/30"}`} />
+              {errors.email && <p className="mt-2 text-red-900 text-[12px] font-light">ⓘ {errors.email}</p>}
             </div>
             <div>
-              <label className="text-sm">How can we help you? *</label>
-              <select name="topic" value={form.topic} onChange={handleChange} className={`w-full mt-2 bg-transparent rounded-md px-4 py-3 ${errors.topic ? "border border-red-700" : "border border-white"}`}>
+              <label className="text-[12px]">How can we help you? *</label>
+              <select name="topic" value={form.topic} onChange={handleChange} className={`w-full mt-2 text-[12px] text-white/60 bg-transparent  rounded-md px-4 py-3 ${errors.topic ? "border border-red-900" : "border border-white/30"}`}>
                 <option value="" className="text-black">Select a topic</option>
                 <option className="text-black">Exploration</option>
                 <option className="text-black">Production</option>
                 <option className="text-black">Midstream</option>
                 <option className="text-black">Technical Advisory</option>
               </select>
-              {errors.topic && <p className="mt-2 text-red-700 text-[12px] font-light">ⓘ {errors.topic}</p>}
+              {errors.topic && <p className="mt-2 text-red-900 text-[12px] font-light">ⓘ {errors.topic}</p>}
             </div>
             <div>
-              <label className="text-sm">Message *</label>
-              <textarea name="message" rows={3} value={form.message} onChange={handleChange} placeholder="Tell us how we can help you" className={`w-full mt-2 bg-transparent rounded-md px-4 py-3 placeholder:text-white/90 focus:outline-none ${errors.message ? "border border-red-700" : "border border-white"}`} />
-              {errors.message && <p className="mt-2 text-red-700 text-[12px] font-light">ⓘ {errors.message}</p>}
+              <label className="text-[12px]">Message *</label>
+              <textarea name="message" rows={3} value={form.message} onChange={handleChange} placeholder="Tell us how we can help you" className={`w-full mt-2 bg-transparent rounded-md px-4 py-2 placeholder:text-white/60 placeholder:text-[12px]  focus:outline-none ${errors.message ? "border border-red-900" : "border border-white/30"}`} />
+              {errors.message && <p className="mt-2 text-red-900 text-[12px] font-light">ⓘ {errors.message}</p>}
             </div>
             <div className="space-y-4">
-              <button type="submit" disabled={isLoading} className={`w-full h-[56px] cursor-pointer flex items-center justify-center rounded-md font-medium text-lg transition ${isLoading ? "bg-[#0b2a4a]/70 cursor-not-allowed" : "bg-[#0b2a4a] hover:bg-[#123a63]"}`}>
+              <button type="submit" disabled={isLoading} className={`w-full h-[56px] cursor-pointer flex items-center justify-center border border-white/80 rounded-md font-medium text-lg transition ${isLoading ? " cursor-not-allowed" : " "}`}>
                 <div className="relative flex items-center justify-center">
-                  <span className={`transition-opacity ${isLoading ? "opacity-0" : "opacity-100"}`}>Submit</span>
+                  <span className={`transition-opacity text-[16px] ${isLoading ? "opacity-0" : "opacity-100"}`}>Submit</span>
                   {isLoading && <span className="absolute h-6 w-6 rounded-full border-2 border-white/30 border-t-white animate-spin" />}
                 </div>
               </button> 
@@ -145,11 +145,11 @@ export default function ContactSection() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="flex-1 flex flex-col pt-4 lg:pt-14 order-2 lg:order-1"
         >
-          <h2 className="text-[32px] md:text-6xl lg:text-[62px] font-bold leading-[0.9] mb-4 md:mb-8">
+          <h2 className="text-[32px] md:text-6xl lg:text-[50px] font-bold leading-[0.9] mb-4 md:mb-7">
             Connect with our  petroleum experts.
           </h2>
 
-          <p className="text-white/90 text-[16px] leading-tight">
+          <p className="text-white/90 text-[14px] leading-tight">
             Facilitating upstream exploration and midstream infrastructure
             projects through precision engineering and technical advisory.
           </p>
