@@ -1,0 +1,664 @@
+[
+   
+    {
+        "id": "upstream",
+        "image": "/images/e-p.png",
+        "layout": "upstream",
+        "upstreamSections": [
+            {
+                "topic": "Upstream (Exploration & Production)",
+                "title": "E&P"
+            },
+            {
+                "topic": "Midstream (Transportation & Storage)",
+                "title": "T&S"
+            }
+        ],
+        "bottomDescription": "ORINOX is a full-service oil drilling company operating across the Upstream (Exploration & Production) and Midstream (Transportation & Storage) segments of the oil and gas value chain."
+    },
+    {
+        "id": "future",
+        "image": "/images/future.png",
+        "overlayClassName": "bg-black/20",
+        "badge": "THE FUTURE",
+        "badgeClassName": "bg-black/90 px-3 py-1 text-white/50",
+        "mainHeading": "Oil & gas is transforming,\nnot disappearing.",
+        "mainHeadingClassName": "text-2xl lg:text-3xl font-semibold leading-none mb-4",
+        "sections": [
+            {
+                "description": "Global oil and gas demand forecasts with long plateau.\nCapital disciplined operators seeking higher productivity, lower emissions.\nHuge capex in brownfield optimization, CCUS, and infrastructure upgrade."
+            }
+        ]
+    },
+    {
+        "id": "who-we-are",
+        "image": "/images/who-we-are.png",
+        "overlayClassName": "bg-black/40",
+        "badge": "WHO WE ARE",
+        "mainHeading": "Precision Drilling &\nLow-Carbon Infrastructure Partner",
+        "mainHeadingClassName": "text-2xl lg:text-3xl font-semibold leading-none mb-4",
+        "sections": [
+            {
+                "description": "High-performance drilling and future-ready oil & gas infrastructure"
+            },
+            {
+                "description": "Specialist drilling and field development partner (Upstream & Near-Field Midstream).\nCombining drilling excellence with digital optimization and low-carbon readiness.\nTargeting attractive IRRs across drilling, CCUS, and hydrogen-ready advisory."
+            }
+        ]
+    },
+    {
+        "id": "exploration-production",
+        "image": "/images/our-expertise.png",
+        "overlayClassName": "bg-black/20",
+        "badge": "OUR EXPERTISE",
+        "mainHeading": "Exploration and Production (E&P)",
+        "mainHeadingClassName": "text-[20px] lg:text-2xl font-semibold leading-none",
+        "sections": [
+            {
+                "heading": "Exploration",
+                "description": "We are always searching for hydrocarbon reservoirs using seismic surveys and other geological data."
+            },
+            {
+                "heading": "Production",
+                "description": "Our experienced team is known for drilling wells and developing facilities to extract crude oil and natural gas from the ground, both onshore and offshore."
+            }
+        ]
+    },
+    {
+        "id": "transportation-storage",
+        "image": "/images/transportation-and-storage.png",
+        "overlayClassName": "bg-black/20",
+        "badge": "OUR EXPERTISE",
+        "mainHeading": "Transportation and Storage (T&S)",
+        "mainHeadingClassName": "text-[20px] lg:text-2xl font-semibold leading-none",
+        "sections": [
+            {
+                "heading": "Transportation",
+                "description": "We offer multiple services, depending on the product and location, including setting up of pipelines, and transportation by rail, road, and maritime vessels."
+            },
+            {
+                "heading": "Storage",
+                "description": "Holding of raw materials like crude oil and natural gas, and finished products (refined petroleum products or liquefied natural gas) in facilities such as tanks, mounded storage vessels, or underground reservoirs, require the most trustworthy and reliable specialists.\nAt Orinox, we ensure nothing is left to chance."
+            }
+        ]
+    },
+    {
+        "id": "current-capabilities",
+        "image": "/images/current-capabilities.png",
+        "overlayClassName": "bg-black/20",
+        "badge": "CURRENT CAPABILITIES",
+        "mainHeading": "Core Upstream",
+        "contentContainerClassName": "absolute top-1/2 -translate-y-1/2 left-10 lg:left-25 z-20 space-y-3 md:space-y-5 max-w-xs sm:max-w-md lg:max-w-xl text-white flex flex-col",
+        "sections": [
+            {
+                "heading": "Drilling Services & Rig Operations",
+                "description": "Onshore drilling (exploration, appraisal, development wells).\nWork-over operations and basic well intervention.\nDay-rate or turnkey contracts."
+            },
+            {
+                "heading": "Well Engineering & Project Management",
+                "description": "Well design (trajectory, casing program, mud program).\nAFE and cost estimation.\nDrilling program planning, logistics coordination, contractor management."
+            },
+            {
+                "heading": "Completions & Basic Production Support",
+                "description": "Casing and cementing supervision (via partners or in-house crew).\nSimple completions and well clean-up.\nHand-over-to-production procedures."
+            },
+            {
+                "heading": "HSE, Risk & Compliance in Drilling",
+                "description": "Rig safety management, permit-to-work, toolbox talks.\nIncident investigation, basic environmental compliance on pads."
+            }
+        ]
+    },
+    {
+        "id": "transition-capabilities",
+        "image": "/images/transition-capabilities.png",
+        "overlayClassName": "bg-black/20",
+        "badge": "TRANSITION CAPABILITIES – UPSTREAM",
+        "mainHeading": "Orinox: The “Next Wave” of Capabilities",
+        "contentContainerClassName": "absolute top-1/2 -translate-y-1/2 left-10 lg:left-25 z-20 space-y-3 md:space-y-5 max-w-xs sm:max-w-md lg:max-w-xl text-white flex flex-col",
+        "sections": [
+            {
+                "heading": "Digital Drilling & Performance Optimization",
+                "description": "Real-time drilling analytics and KPI dashboards (ROP, NPT, bit life).\nAI/ML models for stuck-pipe risk, torque & drag, vibration monitoring.\n“Digital drilling center” service for clients."
+            },
+            {
+                "heading": "Advanced Reservoir & Production Optimization Support",
+                "description": "Collaboration with reservoir engineers to design well placement & completions for maximized EUR.\nProduction surveillance data integration to refine drilling/completion strategy over field life."
+            },
+            {
+                "heading": "Low-Carbon Field Development Solutions",
+                "description": "Well designs compatible with CO₂-EOR or CO₂ storage in the future.\nIntegration of electrified rigs / lower-emission drilling packages.\nMethane-leak monitoring and flaring optimization around well pads."
+            },
+            {
+                "heading": "Geothermal & Repurposing of Brownfields",
+                "description": "Re-using old O&G wells for geothermal heat or power pilots.\nPortfolio screening services to identify geothermal prospects."
+            }
+        ]
+    },
+    {
+        "id": "core-midstream",
+        "image": "/images/core-midstream.png",
+        "overlayClassName": "bg-black/30",
+        "badge": "CURRENT CAPABILITIES",
+        "mainHeading": "Core Midstream",
+        "contentContainerClassName": "absolute top-1/2 -translate-y-1/2 left-10 lg:left-25 z-20 space-y-3 md:space-y-5 max-w-xs sm:max-w-md lg:max-w-xl text-white flex flex-col",
+        "sections": [
+            {
+                "heading": "Pre-FEED / FEED Support for Gathering & Flowlines",
+                "description": "Well pad tie-in design, routing options, hydraulic considerations.\nGathering system concepts for new fields.\n“Digital drilling center” service for clients."
+            },
+            {
+                "heading": "Pipeline & Flowline Construction Management (via EPC partners)",
+                "description": "On-site construction supervision.\nQuality assurance, welding inspection, pressure testing coordination."
+            },
+            {
+                "heading": "Tankage & Storage Interface Engineering",
+                "description": "Basic tank farm layout suggestions for field terminals (crude, produced water).\nMetering, LACT units, small loading facilities."
+            },
+            {
+                "heading": "Operations Readiness & Commissioning Support",
+                "description": "Procedures, checklists, and training for first oil/gas.\nEmergency response and safety drills around new midstream assets."
+            }
+        ]
+    },
+    {
+        "id": "further-capabilities",
+        "image": "/images/future-capabilities.png",
+        "overlayClassName": "bg-black/30",
+        "badge": "FURTHER CAPABILITIES – MIDSTREAM",
+        "mainHeading": "Orinox: The “Future of Infrastructure” Specialist",
+        "contentContainerClassName": "absolute top-1/2 -translate-y-1/2 left-10 lg:left-25 z-20 space-y-3 md:space-y-5 max-w-xs sm:max-w-md lg:max-w-xl text-white flex flex-col",
+        "sections": [
+            {
+                "heading": "Hydrogen-Ready & CO₂-Ready Pipeline Design Advisory",
+                "description": "Advisory on material selection and routing for hydrogen or CO₂ transport.\nBlending hydrogen into existing gas grids (H₂-ready concepts)."
+            },
+            {
+                "heading": "CO₂ Transport Network Planning for CCUS",
+                "description": "Conceptual routing from emitters to storage hubs (salt caverns, depleted fields).\nMulti-client CO₂ pipeline corridor studies."
+            },
+            {
+                "heading": "Digital Twins for Field-to-Terminal Networks",
+                "description": "Simulation models of gathering systems and small pipelines.\nCapacity debottlenecking, leak scenario simulations, “what-if” planning."
+            },
+            {
+                "heading": "Methane & Fugitive Emission Monitoring Services",
+                "description": "Integrated leak detection programs for gathering systems, manifolds, and terminals.\nEmissions dashboards and compliance reporting as a service."
+            },
+            {
+                "heading": "Integrated “Low-Carbon Field Infrastructure” Offering",
+                "description": "Combine upstream well design + midstream gathering + emissions abatement into one turnkey solution.\nFrom first well to low-carbon evacuation route."
+            }
+        ]
+    },
+    {
+        "id": "orinoxship",
+        "image": "/images/orinox.png",
+        "layout": "image-only"
+    },
+    {
+        "id": "addressing-the-problem",
+        "image": "/images/addressing-the-problem.jpg",
+        "overlayClassName": "bg-black/30",
+        "badge": "ADDRESSING THE PROBLEM",
+        "mainHeading": "Inefficient, High-Emission Field Development",
+        "sections": [
+            {
+                "description": "Traditional drilling and midstream development is siloed, inefficient, and often wasteful."
+            },
+            {
+                "description": "Siloed drilling, subsurface, and infrastructure planning.\nHigh NPT, cost overruns, under-utilized pipelines and terminals.\nGrowing regulatory pressure on methane, flaring, and CO₂."
+            }
+        ]
+    },
+    {
+        "id": "core-business-snapshot",
+        "image": "/images/core-business-snapshot.png",
+        "badge": "CORE BUSINESS SNAPSHOT",
+        "mainHeading": "What Orinox already does well and reliably.",
+        "contentContainerClassName": "absolute top-1/3 -translate-y-1/2 left-10 lg:left-25 z-20 space-y-3 md:space-y-5 max-w-xs sm:max-w-md lg:max-w-xl text-white flex flex-col",
+        "sections": [
+            {
+                "description": "Onshore drilling operations and well engineering.\nWorkovers and completions support.\nPre-FEED/FEED support for gathering systems and field infrastructure.\nRobust HSE culture and project management."
+            }
+        ]
+    },
+    {
+        "id": "orinox-page-1",
+        "image": "/images/first-well-to-low-carbon-evacuation-route.png",
+        "overlayClassName": "bg-black/50",
+        "badge": "INTEGRATED PROPOSITION",
+        "mainHeading": "Integration is the differentiator.",
+        "sections": [
+            {
+                "description": "Single partner for drilling, field infrastructure, and low-carbon compatibility.\nReduced time to first oil/gas, better NPV and IRR through integrated planning.\nBuilt-in emissions and future-proofing for CCUS/H₂."
+            }
+        ]
+    },
+    {
+        "id": "orinox-page-2",
+        "image": "/images/orinox-grounded-techninal-rigor-depth-research.jpg",
+        "overlayClassName": "bg-black/50",
+        "badge": "INTEGRATED PROPOSITION",
+        "mainHeading": "Orinox is grounded in technical rigor and in-depth research.",
+        "sections": [
+            {
+                "description": "Adoption of best practices from latest upstream drilling and midstream pipeline R&D.\nPartnerships with technology vendors (digital drilling, emissions detection, digital twins).\nContinuous benchmarking: ROP performance, emissions intensity, cost per barrel delivered."
+            }
+        ]
+    },
+    {
+        "id": "orinox-page-3",
+        "image": "/images/responsible-hydrocarbons-quantifiable-esc-metrics.png",
+        "overlayClassName": "bg-black/50",
+        "badge": "ESG & Sustainability Strategy",
+        "mainHeading": "Responsible hydrocarbons with quantifiable ESG metrics.",
+        "sections": [
+            {
+                "description": "Methane and fugitive emissions reduction initiatives.\nElectrification pathways for rigs and infrastructure.\nDecommissioning and brownfield repurposing (geothermal, CCUS).\nCommunity engagement and local content strategy."
+            }
+        ]
+    },
+    {
+        "id": "why-we-excel",
+        "image": "/images/why-we-excel-over-the-rest.png",
+        "badge": "WHY WE EXCEL OVER THE REST",
+        "mainHeading": "We drill better, faster, safer",
+        "contentContainerClassName": "absolute bottom-20 -translate-y-1/2 right-6 lg:right-25 z-20 max-w-xs sm:max-w-md lg:max-w-xl text-white flex flex-col text-right",
+        "sections": [
+            {
+                "description": "We design field and midstream infrastructure that is ready for CCUS and hydrogen.\nWe turn legacy oil & gas capex into future-proof, low-carbon assets."
+            }
+        ]
+    },
+    {
+        "id": "fit-for-purpose",
+        "image": "/images/fit-for-purpose-fleet.png",
+        "badge": "FIT-FOR-PURPOSE FLEET",
+        "contentContainerClassName": "absolute top-1/2 -translate-y-1/2 left-10 lg:left-25 z-20 space-y-3 md:space-y-5 max-w-xs sm:max-w-md lg:max-w-xl text-white flex flex-col",
+        "sections": [
+            {
+                "heading": "Type of Rigs",
+                "description": "Light / medium / heavy land rigs\nHP rating (e.g., 750 HP vs 1500 HP)\nDepth capability, horizontal / directional capability"
+            },
+            {
+                "heading": "Specialization",
+                "description": "Conventional vertical drilling\nHigh-angle / horizontal\nWorkover / well service units"
+            },
+            {
+                "heading": "Age & Condition",
+                "description": "New builds vs mid-life vs old units\nAutomation level (top drive, iron roughneck, auto-driller, etc.)"
+            },
+            {
+                "heading": "Ownership Model",
+                "description": "Fully owned rigs\nLong-term leased rigs\n“Asset-light” model relying on partnership fleets"
+            }
+        ]
+    },
+    {
+        "id": "tech-stack",
+        "image": "/images/tech-stack.jpg",
+        "overlayClassName": "bg-black/60",
+        "badge": "TECH STACK",
+        "contentContainerClassName": "absolute top-1/2 -translate-y-1/2 left-10 lg:left-25 z-20 space-y-3 md:space-y-5 max-w-xs sm:max-w-md lg:max-w-xl text-white flex flex-col",
+        "sections": [
+            {
+                "heading": "Operational Excellence and Accurate, Reliable Data",
+                "description": "Field-proven equipment, integrated data, and digital optimization from day one."
+            },
+            {
+                "heading": "Field technology for safer, faster wells",
+                "description": "Modern rig control systems (top drive, auto-driller, rig-floor automation) to reduce human exposure and NPT.\nReal-time data acquisition (WITSML/other standard) from rig sensors, MWD/LWD, and mud logging units."
+            },
+            {
+                "heading": "Digital drilling and performance analytics",
+                "description": "Central operations dashboard to monitor ROP, NPT, bit runs, and fuel consumption across rigs.\nEarly-stage AI/ML models to flag anomalies and optimize drilling parameters."
+            },
+            {
+                "heading": "Enterprise backbone to scale",
+                "description": "Integrated ERP for finance, procurement, fleet maintenance, and inventory.\nHSE and incident-reporting platform to capture every near miss, observation, and safety action."
+            },
+            {
+                "heading": "Future-ready data architecture",
+                "description": "Structured data lake from day one, enabling future products:\nClient benchmarking, emissions reporting and digital twin offerings for fields and gathering systems"
+            }
+        ]
+    },
+    {
+        "id": "exploration-services",
+        "image": "/images/exploration-services.png",
+        "badge": "Upstream (Exploration & Production) Services",
+        "mainHeading": "Exploration Services",
+        "contentContainerClassName": "absolute bottom-1/2 translate-y-1/2 left-10 lg:left-25 z-20 space-y-3 md:space-y-5 max-w-xs sm:max-w-md lg:max-w-xl text-white flex flex-col",
+        "sections": [
+            {
+                "description": "End-to-end exploration capability to identify new oil and gas reserves, including geological and geophysical (G&G) surveying, seismic data acquisition (2D/3D seismic campaigns), petrophysical analysis, and basin modeling."
+            },
+            {
+                "description": "Orinox can handle prospect generation, licensing rounds bids, and exploration well planning."
+            },
+            {
+                "description": "Once prospects are identified, Orinox manages exploration drilling – mobilizing suitable rigs to frontier locations (onshore or offshore). Our exploration teams aim to high-grade areas with the best chance of success using advanced tech (e.g. AI-assisted seismic interpretation and basin analog databases). By offering integrated exploration, Orinox helps resource holders (governments or partners) delineate new fields efficiently."
+            }
+        ]
+    },
+    {
+        "id": "appraisal-field-evaluation",
+        "image": "/images/appraisal-and-field-evalution.png",
+        "badge": "Upstream (Exploration & Production) Services",
+        "mainHeading": "Appraisal & Field Evaluation",
+        "contentContainerClassName": "absolute bottom-1/2 translate-y-1/2 left-10 lg:left-25 z-20 space-y-3 md:space-y-5 max-w-xs sm:max-w-md lg:max-w-xl text-white flex flex-col",
+        "sections": [
+            {
+                "description": "After a discovery, Orinox conducts appraisal drilling and testing to determine the field’s size and commercial viability."
+            },
+            {
+                "description": "Services include drilling appraisal wells, performing well logs and extended well flow tests, coring and fluid sampling, and reservoir characterization studies. Our reservoir engineers build dynamic models to estimate reserves and optimal development plans."
+            },
+            {
+                "description": "For example, we provide well test analysis, pressure-volume-temperature (PVT) analysis, and simulation of different development scenarios. The goal is to assess reservoir deliverability and design the most effective development scheme. By combining subsurface expertise with well testing, Orinox can reduce uncertainty and ensure the development plan matches the reservoir’s characteristics."
+            }
+        ]
+    },
+    {
+        "id": "development-drilling-completion",
+        "image": "/images/development-drilling-completion.png",
+        "badge": "Upstream (Exploration & Production) Services",
+        "mainHeading": "Development Drilling & Completion",
+        "contentContainerClassName": "absolute bottom-1/2 translate-y-1/2 left-10 lg:left-25 z-20 space-y-3 md:space-y-5 max-w-xs sm:max-w-md lg:max-w-xl text-white flex flex-col",
+        "sections": [
+            {
+                "description": "Orinox offers full-scale development drilling services once a project moves forward. This covers drilling production wells (and injection wells if needed for pressure support), using fit-for-purpose rigs (land rigs for onshore pads, offshore rigs or platform rigs for offshore projects)."
+            },
+            {
+                "description": "We manage well design, directional drilling, and modern completion techniques (like multi-stage hydraulic fracturing for shale, or smart completions for offshore). Our teams handle well completion and stimulation, installing production tubing, artificial lift (ESPs or gas lift), and performing initial well productivity enhancements."
+            },
+            {
+                "description": "During field development, Orinox integrates drilling with facilities planning – e.g., clustering wells on pads or platforms to minimize surface footprint. The service extends to project management for drilling campaigns, including procurement of OCTG (tubulars) and wellheads, logistics for remote sites, and implementation of rigorous safety management. With Orinox’s drilling efficiency focus, clients benefit from reduced well costs and faster first oil."
+            }
+        ]
+    },
+    {
+        "id": "production-operation-optimization",
+        "image": "/images/production-operations-and-optimization.png",
+        "badge": "Upstream (Exploration & Production) Services",
+        "mainHeading": "Production Operations & Optimization",
+        "contentContainerClassName": "absolute top-1/2 -translate-y-1/2 left-10 lg:left-25 z-20 space-y-3 md:space-y-5 max-w-xs sm:max-w-md lg:max-w-xl text-white flex flex-col",
+        "sections": [
+            {
+                "description": "Once wells are on stream, Orinox can operate or support field production to maximize output and uptime."
+            },
+            {
+                "description": "We provide production operation services – managing day-to-day well monitoring, choke management, and surface facility operations (separators, heaters, etc.)."
+            },
+            {
+                "description": "A key offering is production optimization, using digital oilfield tools to analyze real-time well data (pressures, flow rates) and applying artificial intelligence/machine learning to adjust settings for peak output. For instance, Orinox can deploy digital twin technology to model production systems; a digital twin of an oil extraction process can highlight bottlenecks and suggest tweaks to improve flow rates."
+            },
+            {
+                "description": "Our experts also design artificial lift solutions (like optimizing pump settings, gas lift injection rates) and schedule well interventions (such as stimulations, cleanouts) when decline is observed. We emphasize integrated reservoir management – working with geoscientists to plan infill wells or waterflood/EOR strategies."
+            }
+        ]
+    },
+    {
+        "id": "enhanced-oil-recovery",
+        "image": "/images/enhanced-oil-recovery-and-late-life-services.png",
+        "overlayClassName": "bg-black/20",
+        "badge": "Upstream (Exploration & Production) Services",
+        "mainHeading": "Enhanced Oil Recovery (EOR) & Late-life Services",
+        "contentContainerClassName": "absolute bottom-1/2 translate-y-1/2 left-10 lg:left-25 z-20 space-y-3 md:space-y-5 max-w-xs sm:max-w-md lg:max-w-xl text-white flex flex-col",
+        "sections": [
+            {
+                "description": "For maturing fields, Orinox can evaluate and implement EOR techniques, for example, gas injection, waterflood design, chemical EOR (polymer/surfactant flooding) or even CO₂ injection if available. We run pilot tests, design surface facilities (injection plants), and monitor EOR performance."
+            },
+            {
+                "description": "Additionally, as fields near end-of-life, Orinox provides well workovers and re-completions to revive production (e.g., adding perforations to new zones, or converting producers to injectors and vice versa)."
+            },
+            {
+                "description": "Finally, we can plan and execute plug & abandonment of wells safely and cost-effectively when needed, and manage decommissioning of small facilities – fulfilling late-life obligations in an environmentally responsible manner."
+            }
+        ]
+    },
+    {
+        "id": "gathering-transportation",
+        "image": "/images/gathering-and-transportaion.png",
+        "badge": "Midstream (Transportation, Storage, Processing, Marketing) Services",
+        "mainHeading": "Gathering & Transportation",
+        "contentContainerClassName": "absolute top-95 md:top-1/2 -translate-y-1/2 left-10 lg:left-25 z-20 space-y-3 md:space-y-5 max-w-xs sm:max-w-md lg:max-w-xl text-white flex flex-col",
+        "sections": [
+            {
+                "description": "Orinox designs, builds, and operates the infrastructure that moves hydrocarbons from the wellhead to processing or market. This includes gathering pipeline systems in field areas – small-diameter flowlines that connect each well or platform to central collection points. We can install multi-phase pipelines or separate oil/gas gathering lines, complete with compression for gas and pumps for oil as needed."
+            },
+            {
+                "description": "Orinox also offers trunk pipeline development for larger volumes: e.g., regional oil pipelines from a field to a refinery or port, and gas transmission pipelines from producing basins to consuming markets."
+            },
+            {
+                "description": "The transportation service aims to ensure that product flows reliably from production sites to the next stage with minimal bottlenecks."
+            }
+        ]
+    },
+    {
+        "id": "oil-gas-processing",
+        "image": "/images/oil-and-gas-processing.png",
+        "overlayClassName": "bg-black/40",
+        "badge": "Midstream (Transportation, Storage, Processing, Marketing) Services",
+        "mainHeading": "Oil & Gas Processing",
+        "contentContainerClassName": "absolute top-1/2 -translate-y-1/2 left-10 lg:left-25 z-20 space-y-3 md:space-y-5 max-w-xs sm:max-w-md lg:max-w-xl text-white flex flex-col",
+        "sections": [
+            {
+                "description": "After collection, most hydrocarbons need processing before they are market-ready. Orinox can develop and run central processing facilities (CPFs) for oil and gas processing plants."
+            },
+            {
+                "description": "For natural gas, our services include gas treatment (removing impurities like CO₂, H₂S, water) and gas processing to extract Natural Gas Liquids (NGLs) such as propane, butane, etc."
+            },
+            {
+                "description": "By handling processing, Orinox ensures that upstream production is converted into marketable commodities."
+            }
+        ]
+    },
+    {
+        "id": "storage-solutions",
+        "image": "/images/storage-solutions.jpg",
+        "overlayClassName": "bg-black/50",
+        "badge": "Midstream (Transportation, Storage, Processing, Marketing) Services",
+        "mainHeading": "Storage Solutions",
+        "contentContainerClassName": "absolute top-1/2 -translate-y-1/2 left-10 lg:left-25 z-20 space-y-3 md:space-y-5 max-w-xs sm:max-w-md lg:max-w-xl text-white flex flex-col",
+        "sections": [
+            {
+                "description": "Orinox provides hydrocarbon storage at various points in the value chain. For crude oil, we can build and manage tank farms – large storage tank batteries at field terminals or hub locations."
+            },
+            {
+                "description": "We also handle NGL and refined product storage (pressurized bullets for propane/butane, etc., or atmospheric tanks for condensate)."
+            },
+            {
+                "description": "The ability to safely store volumes gives Orinox’s partners security of supply and operational leeway."
+            }
+        ]
+    },
+    {
+        "id": "marketing-offtake",
+        "image": "/images/marketing-and-offtaking-management.png",
+        "overlayClassName": "bg-black/30",
+        "badge": "Midstream (Transportation, Storage, Processing, Marketing) Services",
+        "mainHeading": "Marketing & Offtake Management",
+        "contentContainerClassName": "absolute top-1/2 -translate-y-1/2 left-10 lg:left-25 z-20 space-y-3 md:space-y-5 max-w-xs sm:max-w-md lg:max-w-xl text-white flex flex-col",
+        "sections": [
+            {
+                "description": "Orinox’s service portfolio extends to the commercialization of oil and gas. In the midstream sector, marketing refers to finding buyers, negotiating sales contracts, and arranging transportation for hydrocarbons."
+            },
+            {
+                "description": "We would employ commercial experts to handle offtake agreements, price hedging, and market analysis."
+            },
+            {
+                "description": "Orinox can leverage its network and expertise to maximize netback prices for producers."
+            }
+        ]
+    },
+    {
+        "id": "key-differentiators",
+        "image": "/images/storage-solutions.jpg",
+        "overlayClassName": "bg-black/50",
+        "mainHeading": "Key Differentiators",
+        "contentContainerClassName": "absolute top-1/2 -translate-y-1/2 left-10 lg:left-25 z-20 space-y-3 md:space-y-5 max-w-xs sm:max-w-md lg:max-w-xl text-white flex flex-col",
+        "sections": [
+            {
+                "description": "In a competitive industry, Orinox stands out by blending innovative technology, sustainable practices, operational agility, and cross-sector synergy"
+            },
+            {
+                "heading": "Advanced Technology & Digital Integration",
+                "description": "Orinox is committed to leveraging the latest tech stack – from the drill bit to the pipeline. We deploy AI and Machine Learning for real-time drilling optimization and predictive maintenance."
+            },
+            {
+                "description": "Our production facilities have IoT sensors feeding cloud analytics platforms so we can tweak processes continuously for efficiency."
+            }
+        ]
+    },
+    {
+        "id": "modularity-rapid-development",
+        "image": "/images/modularity-and-rapid-deployment.png",
+        "overlayClassName": "bg-black/20",
+        "contentContainerClassName": "absolute top-95 -translate-y-1/2 left-10 lg:left-25 z-20 space-y-3 md:space-y-5 max-w-xs sm:max-w-md lg:max-w-xl text-white flex flex-col",
+        "sections": [
+            {
+                "heading": "Modularity and Rapid Deployment",
+                "description": "One of Orinox’s hallmarks is speed and flexibility in project execution. We achieve this through modular designs and agile project management."
+            },
+            {
+                "description": "This is crucial for frontier areas with little infrastructure (jungle, desert, arctic) where conventional rigs would require heavy-lift transport."
+            },
+            {
+                "description": "The net effect is Orinox can bring new production online faster than competitors."
+            }
+        ]
+    },
+    {
+        "id": "integrated-cross-sector",
+        "image": "/images/integrated-cross-sector-synergy.png",
+        "overlayClassName": "bg-black/30",
+        "contentContainerClassName": "absolute top-95 -translate-y-1/2 left-10 lg:left-25 z-20 space-y-3 md:space-y-5 max-w-xs sm:max-w-md lg:max-w-xl text-white flex flex-col",
+        "sections": [
+            {
+                "heading": "Integrated Cross-Sector Synergy",
+                "description": "Perhaps Orinox’s most unique differentiator is the very premise of the company – an integrated approach bridging upstream and midstream."
+            },
+            {
+                "description": "There’s a financial synergy as well: we can bundle upstream and midstream investments in creative ways to improve project economics."
+            }
+        ]
+    },
+    {
+        "id": "commits-to-deliver",
+        "image": "/images/what-orinox-commits-to-deliver.png",
+        "overlayClassName": "bg-black/30",
+        "contentContainerClassName": "absolute top-60 -translate-y-1/2 left-10 lg:left-25 z-20 space-y-3 md:space-y-5 max-w-xs sm:max-w-md lg:max-w-xl text-white flex flex-col",
+        "sections": [
+            {
+                "heading": "What Orinox commits to deliver",
+                "description": "A phased drilling + near-field midstream scope, with integrated low-carbon readiness.\nA complete HSE and environmental management plan aligned to national regulations and international practice.\nA local content plan (jobs, training, supplier onboarding, reporting cadence).\nTransparent progress reporting and auditable KPIs (safety, schedule, emissions, local value)."
+            }
+        ]
+    },
+    {
+        "id": "what-proposes",
+        "image": "/images/what-orinox-proposes.png",
+        "overlayClassName": "bg-black/30",
+        "contentContainerClassName": "absolute top-60 -translate-y-1/2 left-10 lg:left-25 z-20 space-y-3 md:space-y-5 max-w-xs sm:max-w-md lg:max-w-xl text-white flex flex-col",
+        "sections": [
+            {
+                "heading": "What Orinox Proposes",
+                "description": "Integrated well delivery (drilling + well engineering) with near-field midstream support (gathering, storage interfaces, commissioning) and built-in methane management and CCUS/H₂ readiness."
+            }
+        ]
+    },
+    {
+        "id": "why-orinox",
+        "image": "/images/why-orinox.jpg",
+        "overlayClassName": "bg-black/40",
+        "mainHeading": "Why Orinox?",
+        "contentContainerClassName": "absolute top-1/2 -translate-y-1/2 left-10 lg:left-25 z-20 space-y-3 md:space-y-5 max-w-xs sm:max-w-md lg:max-w-xl text-white flex flex-col",
+        "sections": [
+            {
+                "description": "Faster time-to-production, reduced flaring and methane leakage, strengthened local capability, and improved reliability of evacuation infrastructure—delivered with transparent KPIs and auditable controls."
+            },
+            {
+                "heading": "Compliance-first Execution",
+                "description": "Permit-to-work, well control, contractor bridging, and ESIA/ESMP planning embedded from day one. Clear reporting cadence and government audit rights."
+            },
+            {
+                "heading": "Measured Emissions Management",
+                "description": "LDAR programs, flaring minimization, fuel monitoring, and emissions dashboards (MRV-ready) to meet evolving methane and climate requirements."
+            },
+            {
+                "heading": "Local Content and Skills Transfer",
+                "description": "Structured workforce development, supplier onboarding, and training pipelines designed to meet local content regulations and build durable national capability."
+            }
+        ]
+    },
+    {
+        "id": "governance",
+        "image": "/images/accountable-governance-safe-compliant-delivery.jpg",
+        "overlayClassName": "bg-black/40",
+        "contentContainerClassName": "absolute bottom-10 -translate-y-1/2 left-10 lg:left-25 z-20 space-y-3 md:space-y-5 max-w-xs sm:max-w-md lg:max-w-xl text-white flex flex-col",
+        "sections": [
+            {
+                "heading": "Accountable Governance Structure for Safe, Compliant Delivery",
+                "description": "Orinox is a specialist well delivery and near-field midstream partner. We combine drilling execution, well engineering, and infrastructure readiness with measurable HSE and emissions performance."
+            },
+            {
+                "heading": "Government Interface & Reporting",
+                "description": "Monthly HSE and progress reporting (with incident/near-miss transparency).\nLocal content dashboard and supplier development status.\nEnvironmental compliance reporting aligned to permit conditions.\nJoint technical reviews at defined decision gates."
+            }
+        ]
+    },
+    {
+        "id": "company",
+        "image": "/images/company.png",
+        "overlayClassName": "bg-black/20",
+        "badge": "THE COMPANY",
+        "contentContainerClassName": "absolute top-40 -translate-y-1/2 left-10 lg:left-25 z-20 space-y-4 max-w-xs sm:max-w-md lg:max-w-xl text-white flex flex-col",
+        "sections": [
+            {
+                "heading": "Orinox: What we do now, and where we are going.",
+                "description": "Specialist drilling and field development partner focused on Upstream and Near-Field Midstream.\nCombining legacy expertise in drilling with digital optimization and low-carbon infrastructure.\nTargeting efficient IRR across a pipeline of drilling contracts and CCUS/hydrogen-ready advisory opportunities."
+            }
+        ]
+    },
+    {
+        "id": "onshore-offshore",
+        "image": "/images/onshore-offshore-integrated-solutions.png",
+        "overlayClassName": "bg-black/40",
+        "contentContainerClassName": "absolute top-70 -translate-y-1/2 left-10 lg:left-25 z-20 space-y-4 max-w-xs sm:max-w-md lg:max-w-xl text-white flex flex-col",
+        "sections": [
+            {
+                "description": "Orinox provides integrated services across the Upstream (drilling, well engineering, and production support) and Near-Field Midstream (gathering, flowlines, storage interfaces, and commissioning support) segments of the oil and gas value chain."
+            }
+        ]
+    },
+    {
+        "id": "orinox-working",
+        "image": "/images/orinox-working.jpg",
+        "layout": "image-only"
+    },
+    {
+        "id": "global-locations",
+        "image": "/images/orinox-global-locations.jpg",
+        "overlayClassName": "bg-black/30",
+        "contentContainerClassName": "absolute bottom-0 -translate-y-1/2 right-10 lg:right-25 z-20 space-y-3 md:space-y-5 max-w-xs sm:max-w-md lg:max-w-xl text-white flex flex-col text-right",
+        "sections": [
+            {
+                "heading": "United Kingdom",
+                "description": "Level 28, 52 Lime Street, London,\nEC3M 7AF, United Kingdom"
+            },
+            {
+                "heading": "United Arab Emirates",
+                "description": "Villa 145, Al Manara Street, Al Safa 2,\nDubai, United Arab Emirates"
+            },
+            {
+                "heading": "Venezuela",
+                "description": "Edificio Epsilon CIIP 3 Avenida Venezuela,\nCaracas 1060, Distrito Capital Piso 7"
+            },
+            {
+                "heading": "Spain",
+                "description": "Plaza de la Independencia 8,\nPiso 3 Madrid Spain"
+            }
+        ]
+    }
+]

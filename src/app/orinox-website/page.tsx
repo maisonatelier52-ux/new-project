@@ -14,7 +14,7 @@ import SafetyAtScale from "@/components/SafetyAtScale";
 import StrategicLeadership from "@/components/StrategicLeadership";
 import TechnicalAndMidstream from "@/components/TechnicalAndMidstream";
 
-export default function About() {
+export default function OrinoxWebsite() {
   return (
    <main className="h-screen overflow-y-auto snap-y snap-mandatory scroll-smooth">
     <OrinoxAbout />
