@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import Orinox from "./Orinox";
+
 import { motion, AnimatePresence, useAnimationControls } from "framer-motion";
 
 

@@ -105,7 +105,7 @@ const OrinoxSplash = () => {
                   ORINOX Capabilities Presentation
                 </motion.button>
               </Link>
-              <Link href="/orinox-website" className="w-full">
+              <Link href="https://www.orinox1.com/" className="w-full">
             
               <motion.button
                 initial={{ opacity: 0 }}

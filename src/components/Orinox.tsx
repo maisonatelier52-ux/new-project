@@ -17,7 +17,7 @@ export default function Orinox() {
       </div>
       
       {/* Main Logo */}
-      <Link href="/home">
+      <Link href="/">
         <img
           src="/images/orinox-white-logo.png"
           alt="Orinox Logo"
