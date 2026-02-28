@@ -269,59 +269,305 @@ export default function OrinoxCapabilitiesPresentation() {
         </div>
       </section>
 
-      {/* 9. GATHERING & TRANSPORTATION */}
-      <section className="relative h-screen w-full overflow-hidden block">
-        <img src="/images/gathering-and-transportaion.png" alt="" className="absolute inset-0 h-full w-full object-cover" />
-        <div className="absolute inset-0 bg-black/30" />
-        <div className="absolute top-1/2 -translate-y-1/2 left-10 lg:left-25 z-20 space-y-3 md:space-y-5 max-w-xs sm:max-w-md lg:max-w-xl text-white flex flex-col">
-          <div>
-            <p className="inline-block text-xs uppercase tracking-wide mb-1 text-white/50">Midstream Services</p>
-          </div>
-          <h1 className="text-[14px] font-semibold leading-none text-white/80">Gathering & Transportation</h1>
-          <div className="space-y-1">
-            <p className="text-[12px] text-white/60 leading-tight">Designing and operating infrastructure to move hydrocarbons from wellhead to market. Multi-phase pipelines and regional trunk systems.</p>
+      {/* 9. CORE OPERATIONAL SECTORS */}
+      <section className="relative h-screen w-full overflow-hidden block text-center">
+        <img
+          src="/images/gathering-and-transportaion.png"
+          alt="Refinery complex"
+          className="absolute inset-0 h-full w-full object-cover"
+        />
+        <div className="absolute inset-0 bg-black/50" />
+
+        {/* Header content centered top-mid */}
+        <div className="absolute top-24 md:top-36 left-0 right-0 z-20 px-10">
+          <h1 className="text-4xl md:text-5xl lg:text-[62px] font-bold text-white mb-6 tracking-tight">
+            Core Operational Sectors
+          </h1>
+          <p className="text-white/80 text-[14px] md:text-[16px] max-w-3xl mx-auto leading-relaxed">
+            Driving technical excellence across the integrated oil and gas value chain with precision-led infrastructure solutions.
+          </p>
+        </div>
+
+        {/* Sectors Grid at the bottom */}
+        <div className="absolute bottom-16 md:bottom-24 left-0 right-0 z-20 px-10 md:px-32">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-20 max-w-7xl mx-auto text-left">
+            {/* Exploration */}
+            <div className="flex flex-col">
+              <h3 className="text-white text-2xl font-bold mb-4 tracking-tight">Exploration</h3>
+              <p className="text-white/70 text-[13px] md:text-[14px] leading-relaxed mb-6 lg:min-h-[60px]">
+                Identification and assessment of high-potential upstream assets leveraging advanced geological modeling and seismic evaluation protocols.
+              </p>
+              <div>
+                <button className="px-8 py-2.5 border rounded-[5px] border-white/40 text-[10px] font-medium uppercase tracking-[0.1em] text-white/80 hover:bg-white hover:text-black transition-all duration-300">
+                  Technical Specs
+                </button>
+              </div>
+            </div>
+
+            {/* Production */}
+            <div className="flex flex-col">
+              <h3 className="text-white text-2xl font-bold mb-4 tracking-tight">Production</h3>
+              <p className="text-white/70 text-[13px] md:text-[14px] leading-relaxed mb-6 lg:min-h-[60px]">
+                Optimizing asset lifecycle yields through innovative field development techniques and high-integrity rig infrastructure management.
+              </p>
+              <div>
+                <button className="px-8 py-2.5 border rounded-[5px] border-white/40 text-[10px] font-medium uppercase tracking-[0.1em] text-white/80 hover:bg-white hover:text-black transition-all duration-300">
+                  Technical Specs
+                </button>
+              </div>
+            </div>
+
+            {/* Midstream Logistics */}
+            <div className="flex flex-col">
+              <h3 className="text-white text-2xl font-bold mb-4 tracking-tight">Midstream Logistics</h3>
+              <p className="text-white/70 text-[13px] md:text-[14px] leading-relaxed mb-6 lg:min-h-[60px]">
+                Engineering resilient midstream infrastructure for the secure and reliable transportation of global petroleum resources across vast networks.
+              </p>
+              <div>
+                <button className="px-8 py-2.5 border rounded-[5px] border-white/40 text-[10px] font-medium uppercase tracking-[0.1em] text-white/80 hover:bg-white hover:text-black transition-all duration-300">
+                  Technical Specs
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* 11. OIL & GAS PROCESSING */}
+      {/* 10. INTEGRATED TECHNICAL INFRASTRUCTURE */}
       <section className="relative h-screen w-full overflow-hidden block">
-        <img src="/images/oil-and-gas-processing.png" alt="" className="absolute inset-0 h-full w-full object-cover" />
-        <div className="absolute inset-0 bg-black/40" />
-        <div className="absolute top-1/2 -translate-y-1/2 left-10 lg:left-25 z-20 space-y-3 md:space-y-5 max-w-xs sm:max-w-md lg:max-w-xl text-white flex flex-col">
-          <div>
-            <p className="inline-block text-xs uppercase tracking-wide mb-1 text-white/50">Midstream Services</p>
+        <img
+          src="/images/oil-and-gas-processing.png"
+          alt="Refinery Infrastructure"
+          className="absolute inset-0 h-full w-full object-cover"
+        />
+        <div className="absolute inset-0 bg-black/50" />
+        <div className="absolute top-1/2 -translate-y-1/2 left-10 md:left-32 z-20 flex flex-col space-y-10 md:space-y-12 max-w-4xl text-white">
+
+          {/* Block 1 */}
+          <div className="space-y-3">
+            <h1 className="text-3xl md:text-4xl lg:text-[42px] font-bold leading-[1.1] tracking-tight">
+              Integrated Technical<br />
+              Infrastructure &<br />
+              Midstream Logistics
+            </h1>
+            <p className="text-[12px] md:text-[13px] text-white/80 leading-relaxed max-w-2xl font-normal">
+              Orinox Holding delivers superior technical mastery across the petroleum value chain, ensuring operational success from drilling frameworks to midstream distribution.
+            </p>
           </div>
-          <h1 className="text-[14px] font-semibold leading-none text-white/80">Oil & Gas Processing</h1>
-          <div className="space-y-1">
-            <p className="text-[12px] text-white/60 leading-tight">Developing central processing facilities for gas treatment and extraction of NGLs, ensuring production is market-ready.</p>
+
+          {/* Block 2 */}
+          <div className="space-y-3">
+            <h2 className="text-2xl md:text-3xl lg:text-[38px] font-bold leading-tight tracking-tight">
+              Digital Midstream<br />
+              Infrastructure
+            </h2>
+            <p className="text-[12px] md:text-[13px] text-white/80 leading-relaxed max-w-2xl font-normal">
+              Optimizing pipeline gathering systems through advanced telemetry and real-time SCADA monitoring to ensure secure energy distribution.
+            </p>
+          </div>
+
+          {/* Block 3 */}
+          <div className="space-y-3">
+            <h2 className="text-2xl md:text-3xl lg:text-[38px] font-bold leading-tight tracking-tight">
+              Asset Integrity &<br />
+              Compliance
+            </h2>
+            <p className="text-[12px] md:text-[13px] text-white/80 leading-relaxed max-w-2xl font-normal">
+              Orinox ensures Tier-1 performance across the value chain through uncompromising adherence to ISO and IOGP integrated standards.
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      {/* 11. SAFETY AT SCALE */}
+      <section className="relative h-screen w-full overflow-hidden block bg-black flex flex-col justify-center px-10 md:px-32">
+        <div className="relative z-20 max-w-5xl">
+          <p className="text-[11px] uppercase tracking-[0.25em] font-medium text-white/70 mb-8">
+            SAFETY AT SCALE
+          </p>
+          <h1 className="text-4xl md:text-5xl lg:text-[54px] font-bold text-white mb-8 tracking-tight max-w-4xl leading-[1.1]">
+            The Orinox Standard for<br />
+            Operational Risk<br />
+            Management
+          </h1>
+          <p className="text-[12px] md:text-[14px] text-white/80 leading-relaxed max-w-2xl font-normal">
+            Our zero-incident goal is backed by a robust framework of hazard identification, personnel safety training, and real-time environment monitoring across process facilities.
+          </p>
+        </div>
+      </section>
+
+      {/* 12. GLOBAL FOOTPRINT */}
+      <section className="relative h-screen w-full overflow-hidden block">
+        <img
+          src="/images/orinox-global-locations.jpg"
+          alt="Global Port Operations"
+          className="absolute inset-0 h-full w-full object-cover"
+        />
+        <div className="absolute inset-0 bg-black/30" />
+
+        {/* Header content right-aligned */}
+        <div className="absolute top-16 md:top-24 right-10 md:right-32 z-20 text-right">
+          <h1 className="text-5xl md:text-[68px] font-bold text-white tracking-tight mb-4">
+            Global Footprint
+          </h1>
+          <div className="w-full h-[1px] bg-white/30 mb-12 ml-auto max-w-2xl" />
+        </div>
+
+        {/* Hubs list right-aligned bottom */}
+        <div className="absolute bottom-20 md:bottom-32 right-10 md:right-32 z-20 space-y-8 text-right">
+          <div>
+            <p className="text-[10px] uppercase tracking-[0.25em] font-medium text-white/60 mb-1">STRATEGIC HUB</p>
+            <h2 className="text-white text-3xl md:text-4xl tracking-tight">Dubai</h2>
+          </div>
+          <div>
+            <p className="text-[10px] uppercase tracking-[0.25em] font-medium text-white/60 mb-1">OPERATIONAL HQ</p>
+            <h2 className="text-white text-3xl md:text-4xl tracking-tight">London</h2>
+          </div>
+          <div>
+            <p className="text-[10px] uppercase tracking-[0.25em] font-medium text-white/60 mb-1">TECHNICAL HUB</p>
+            <h2 className="text-white text-3xl md:text-4xl tracking-tight">Madrid</h2>
+          </div>
+          <div>
+            <p className="text-[10px] uppercase tracking-[0.25em] font-medium text-white/60 mb-1">REGIONAL HUB</p>
+            <h2 className="text-white text-3xl md:text-4xl tracking-tight">Caracas</h2>
           </div>
         </div>
       </section>
 
-      {/* 7. GLOBAL LOCATIONS */}
-      <section className="relative h-screen w-full overflow-hidden block">
-        <img src="/images/orinox-global-locations.jpg" alt="" className="absolute inset-0 h-full w-full object-cover" />
-        <div className="absolute inset-0 bg-black/30" />
-        <div className="absolute bottom-0 -translate-y-1/2 right-10 lg:right-25 z-20 space-y-3 md:space-y-5 max-w-xs sm:max-w-md lg:max-w-xl text-white flex flex-col text-right">
-          <div className="space-y-1">
-            <h2 className="text-white/80 text-sm font-semibold">United Kingdom</h2>
-            <p className="text-[10px] text-white/60 leading-tight">Level 28, 52 Lime Street, London, EC3M 7AF</p>
+      {/* 13. CONTACT US */}
+      <section className="relative min-h-screen w-full bg-black flex items-center px-10 md:px-32 py-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 lg:gap-32 w-full max-w-7xl mx-auto items-center">
+
+          {/* Left Side - Content */}
+          <div className="flex flex-col space-y-6">
+            <h1 className="text-5xl md:text-6xl lg:text-[68px] font-bold text-white leading-tight tracking-tight">
+              Connect with our<br />
+              petroleum experts.
+            </h1>
+            <p className="text-white/60 text-sm md:text-sm max-w-lg leading-relaxed ">
+              Facilitating upstream exploration and midstream infrastructure projects through precision engineering and technical advisory.
+            </p>
           </div>
-          <div className="space-y-1">
-            <h2 className="text-white/80 text-sm font-semibold">United Arab Emirates</h2>
-            <p className="text-[10px] text-white/60 leading-tight">Villa 145, Al Manara Street, Dubai, UAE</p>
+
+          {/* Right Side - Form */}
+          <div className="flex flex-col space-y-8  p-8 md:p-12 rounded-2xl  backdrop-blur-sm">
+            <h2 className="text-2xl font-bold text-white mb-4">Contact Us</h2>
+            <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="space-y-1.5">
+                  <label className="text-[11px] uppercase tracking-wider text-white/50 font-medium">First name</label>
+                  <input type="text" className="w-full bg-transparent border-b border-white/20 py-2 text-white focus:outline-none focus:border-white transition-colors" placeholder="Enter your first name" />
+                </div>
+                <div className="space-y-1.5">
+                  <label className="text-[11px] uppercase tracking-wider text-white/50 font-medium">Last name</label>
+                  <input type="text" className="w-full bg-transparent border-b border-white/20 py-2 text-white focus:outline-none focus:border-white transition-colors" placeholder="Enter your last name" />
+                </div>
+              </div>
+
+              <div className="space-y-1.5">
+                <label className="text-[11px] uppercase tracking-wider text-white/50 font-medium">Email *</label>
+                <input type="email" required className="w-full bg-transparent border-b border-white/20 py-2 text-white focus:outline-none focus:border-white transition-colors" placeholder="Enter your email" />
+              </div>
+
+              <div className="space-y-1.5">
+                <label className="text-[11px] uppercase tracking-wider text-white/50 font-medium">How can we help you? *</label>
+                <div className="relative">
+                  <select required className="w-full bg-transparent border-b border-white/20 py-2 text-white/50 focus:outline-none  transition-colors appearance-none cursor-pointer">
+                    <option className="bg-zinc-900" value="">Select a topic</option>
+                    <option className="bg-zinc-900" value="upstream">Upstream Services</option>
+                    <option className="bg-zinc-900" value="midstream">Midstream Logistics</option>
+                    <option className="bg-zinc-900" value="consulting">Technical Advisory</option>
+                    <option className="bg-zinc-900" value="other">Other</option>
+                  </select>
+                  <div className="absolute right-0 top-1/2 -translate-y-1/2 pointer-events-none">
+                    <svg className="w-4 h-4 text-white/40" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
+                  </div>
+                </div>
+              </div>
+
+              <div className="space-y-1.5">
+                <label className="text-[11px] uppercase tracking-wider text-white/50 font-medium">Message *</label>
+                <textarea required rows={4} className="w-full bg-transparent border-b border-white/20 py-2 text-white focus:outline-none focus:border-white transition-colors resize-none" placeholder="Tell us how we can help you"></textarea>
+              </div>
+
+              <div className="pt-6">
+                <button type="submit" className="w-full py-4 border border-white/60 text-[11px] font-bold uppercase tracking-[0.2em] rounded-full hover:bg-white hover:text-black transition-all duration-300">
+                  Submit
+                </button>
+              </div>
+            </form>
           </div>
-          <div className="space-y-1">
-            <h2 className="text-white/80 text-sm font-semibold">Venezuela</h2>
-            <p className="text-[10px] text-white/60 leading-tight">Edificio Epsilon CIIP 3, Caracas 1060</p>
-          </div>
-          <div className="space-y-1">
-            <h2 className="text-white/80 text-sm font-semibold">Spain</h2>
-            <p className="text-[10px] text-white/60 leading-tight">Plaza de la Independencia 8, Madrid</p>
-          </div>
+
         </div>
       </section>
+
+      {/* 14. FOOTER */}
+      <footer className="relative min-h-screen w-full bg-black overflow-hidden px-10 md:px-32 py-20 flex flex-col justify-end">
+        <img
+          src="/images/first-well-to-low-carbon-evacuation-route.png"
+          alt="Offshore Rig"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+
+        <div className="relative z-20 flex flex-col space-y-24">
+
+          {/* Top content: Description */}
+          <div className="flex flex-col lg:flex-row justify-between items-start gap-16">
+            <div className="max-w-xs">
+              <p className="text-white/80 text-[13px] md:text-[14px] leading-relaxed">
+                Orinox Holding is a global leader in the strategic development and technical management of capital-intensive infrastructure across the upstream and midstream petroleum value chain.
+              </p>
+            </div>
+          </div>
+
+          <div className="space-y-12">
+            <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end gap-16">
+              <div className="flex items-center">
+                <img src="/images/orinox-white-logo.png" alt="Orinox" className="h-16 md:h-28 w-auto object-contain opacity-90" />
+              </div>
+
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-12 lg:gap-24 text-white">
+                <div className="space-y-4">
+                  <h4 className="text-[14px] font-bold tracking-wider">About</h4>
+                  <ul className="space-y-2 underline text-[13px] text-white">
+                    <li><Link href="/" className="hover:text-white transition-colors underline decoration-transparent hover:decoration-white/20 underline-offset-4">About</Link></li>
+                    <li><Link href="/" className="hover:text-white transition-colors underline decoration-transparent hover:decoration-white/20 underline-offset-4">Regions</Link></li>
+                    <li><Link href="/" className="hover:text-white transition-colors underline decoration-transparent hover:decoration-white/20 underline-offset-4">Investors</Link></li>
+                    <li><Link href="/" className="hover:text-white transition-colors underline decoration-transparent hover:decoration-white/20 underline-offset-4">Insights</Link></li>
+                  </ul>
+                </div>
+                <div className="space-y-4">
+                  <h4 className="text-[14px] font-bold tracking-wider">Services</h4>
+                  <ul className="space-y-2 underline text-[13px] text-white">
+                    <li><Link href="/" className="hover:text-white transition-colors underline decoration-transparent hover:decoration-white/20 underline-offset-4">Services</Link></li>
+                    <li><Link href="/" className="hover:text-white transition-colors underline decoration-transparent hover:decoration-white/20 underline-offset-4">Technology</Link></li>
+                    <li><Link href="/" className="hover:text-white transition-colors underline decoration-transparent hover:decoration-white/20 underline-offset-4">Case Studies</Link></li>
+                    <li><Link href="/" className="hover:text-white transition-colors underline decoration-transparent hover:decoration-white/20 underline-offset-4">Contact</Link></li>
+                  </ul>
+                </div>
+                <div className="space-y-4">
+                  <h4 className="text-[14px] font-bold tracking-wider">Operations</h4>
+                  <ul className="space-y-2 underline text-[13px] text-white">
+                    <li><Link href="/" className="hover:text-white transition-colors underline decoration-transparent hover:decoration-white/20 underline-offset-4">Operations</Link></li>
+                    <li><Link href="/" className="hover:text-white transition-colors underline decoration-transparent hover:decoration-white/20 underline-offset-4">ESG</Link></li>
+                    <li><Link href="/" className="hover:text-white transition-colors underline decoration-transparent hover:decoration-white/20 underline-offset-4">Team</Link></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div className="pt-8 border-t border-white/20 flex flex-col md:flex-row justify-between items-center gap-6 text-[11px] md:text-[12px] tracking-widest text-white/30 uppercase">
+              <p>© 2026 Orinox Holding</p>
+              <div className="flex gap-8 md:gap-12">
+                <Link href="/" className="hover:text-white transition-colors">Privacy Policy</Link>
+                <Link href="/" className="hover:text-white transition-colors">Terms of Use</Link>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </footer>
 
     </div>
   );
