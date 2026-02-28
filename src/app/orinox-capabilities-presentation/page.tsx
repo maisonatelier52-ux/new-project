@@ -194,52 +194,82 @@ export default function OrinoxCapabilitiesPresentation() {
         </div>
       </section>
 
-      {/* 6. STORAGE SOLUTIONS */}
+      {/* 6. STRATEGIC LEADERSHIP */}
       <section className="relative h-screen w-full overflow-hidden block">
-        <img src="/images/storage-solutions.jpg" alt="" className="absolute inset-0 h-full w-full object-cover" />
-        <div className="absolute inset-0 bg-black/50" />
-        <div className="absolute top-1/2 -translate-y-1/2 left-10 lg:left-25 z-20 space-y-3 md:space-y-5 max-w-xs sm:max-w-md lg:max-w-xl text-white flex flex-col">
-          <div>
-            <p className="inline-block text-xs uppercase tracking-wide mb-1 text-white/50">Midstream Services</p>
-          </div>
-          <h1 className="text-[14px] font-semibold leading-none text-white/80">Storage Solutions</h1>
-          <div className="space-y-1">
-            <p className="text-[12px] text-white/60 leading-tight">Orinox provides hydrocarbon storage at various points. Large tank batteries at field terminals or hubs. NGL and refined product storage via pressurized bullets.</p>
-          </div>
-        </div>
-      </section>
-
-      {/* 8. APPRAISAL & FIELD EVALUATION */}
-      <section className="relative h-screen w-full overflow-hidden block">
-        <img src="/images/appraisal-and-field-evalution.png" alt="" className="absolute inset-0 h-full w-full object-cover" />
+        <img
+          src="/images/modularity-and-rapid-deployment.png"
+          alt="Strategic Leadership"
+          className="absolute brightness-250 inset-0 h-full w-full object-cover"
+        />
         <div className="absolute inset-0 bg-black/30" />
-        <div className="absolute bottom-1/2 translate-y-1/2 left-10 lg:left-25 z-20 space-y-3 md:space-y-5 max-w-xs sm:max-w-md lg:max-w-xl text-white flex flex-col">
-          <div>
-            <p className="inline-block text-xs uppercase tracking-wide mb-1 text-white/50">Upstream Services</p>
-          </div>
-          <h1 className="text-[14px] font-semibold leading-none text-white/80">Appraisal & Field Evaluation</h1>
-          <div className="space-y-1">
-            <p className="text-[12px] text-white/60 leading-tight">Conducting appraisal drilling and testing to determine discovery size and viability. Services include log analysis, flow tests, and reservoir characterization.</p>
-          </div>
+        <div className="absolute bottom-16 md:bottom-24 left-10 md:left-32 z-20 max-w-4xl text-white">
+          <h1 className="text-5xl md:text-[58px] font-bold text-white tracking-tight mb-6">
+            Strategic Leadership
+          </h1>
+          <p className="text-[14px] md:text-[16px] text-white/90 leading-relaxed font-normal max-w-2xl">
+            Orinox is guided by a team of industry veterans with deep expertise in petroleum engineering and midstream infrastructure. Our leadership is committed to transparency, technical innovation, and delivering the highest level of resource security to our global partners.
+          </p>
         </div>
       </section>
 
-      {/* 9. DEVELOPMENT DRILLING & COMPLETION */}
+      {/* 7. ADVANCING THE FRONTIER */}
       <section className="relative h-screen w-full overflow-hidden block">
-        <img src="/images/development-drilling-completion.png" alt="" className="absolute inset-0 h-full w-full object-cover" />
-        <div className="absolute inset-0 bg-black/30" />
-        <div className="absolute bottom-1/2 translate-y-1/2 left-10 lg:left-25 z-20 space-y-3 md:space-y-5 max-w-xs sm:max-w-md lg:max-w-xl text-white flex flex-col">
-          <div>
-            <p className="inline-block text-xs uppercase tracking-wide mb-1 text-white/50">Upstream Services</p>
-          </div>
-          <h1 className="text-[14px] font-semibold leading-none text-white/80">Development Drilling & Completion</h1>
-          <div className="space-y-1">
-            <p className="text-[12px] text-white/60 leading-tight">Full-scale development drilling with fit-for-purpose rigs. Managing well design, directional drilling, and modern completion techniques to minimize surface footprint.</p>
+        <img
+          src="/images/future1.png"
+          alt="Refinery Aerial View"
+          className="absolute brightness-200 inset-0 h-full w-full object-cover"
+        />
+        <div className="absolute inset-0 bg-black/40" />
+        <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-center px-10">
+          <h1 className="text-4xl md:text-5xl lg:text-[54px] font-bold text-white mb-6 leading-tight max-w-5xl tracking-tight">
+            Advancing the Frontier of<br />
+            Petroleum Infrastructure
+          </h1>
+          <p className="text-white/90 text-[14px] md:text-[16px] leading-relaxed max-w-3xl mb-12 font-normal">
+            Orinox Holding stands at the intersection of technical mastery and industry reliability.<br className="hidden md:block" />
+            We deliver the foundational systems that drive exploration, production, and midstream efficiency across the global oil and gas sector.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 items-center">
+            <button className="min-w-[180px] px-8 py-3.5 bg-white text-black text-[11px] font-bold uppercase tracking-[0.15em] rounded-[5px] hover:bg-white/90 transition-all duration-300">
+              View Holding
+            </button>
+            <button className="min-w-[180px] px-8 py-3.5 border border-white text-white text-[11px] font-bold uppercase tracking-[0.15em] rounded-[5px] hover:bg-white/10 transition-all duration-300">
+              Contact Experts
+            </button>
           </div>
         </div>
       </section>
 
-      {/* 10. GATHERING & TRANSPORTATION */}
+      {/* 8. INTEGRATED INFRASTRUCTURE */}
+      <section className="relative h-screen w-full overflow-hidden block">
+        <img
+          src="/images/future-capabilities1.png"
+          alt="Pumpjacks at sunset"
+          className="absolute inset-0 h-full w-full object-cover"
+        />
+        <div className="absolute top-1/2 -translate-y-1/2 left-10 md:left-32 z-20 max-w-5xl text-white flex flex-col">
+          <h1 className="text-4xl md:text-4xl lg:text-[52px] font-bold leading-[1.1] mb-8 tracking-tight max-w-4xl">
+            Integrated Infrastructure for<br />
+            Upstream and Midstream<br />
+            Excellence
+          </h1>
+          <div className="space-y-6 mb-12 max-w-2xl">
+            <p className="text-[10px] md:text-[12px] text-white/90 leading-relaxed font-normal">
+              Orinox Holding serves as a strategic force in the global energy sector, orchestrating technical success across the entire oil and gas value chain. From high-precision drilling frameworks to sophisticated process infrastructure, we deliver the technical solutions that drive operational efficiency and resource security.
+            </p>
+            <p className="text-[10px] md:text-[12px] text-white/90 leading-relaxed font-normal">
+              We maintain operational excellence through absolute integrity and transparency. By integrating innovative engineering with streamlined midstream logistics, Orinox provides the foundational reliability required for industrial-scale energy production, transportation, and strategic petroleum management.
+            </p>
+          </div>
+          <div>
+            <button className="px-10 py-3.5 border rounded-[5px] border-white/60 text-[11px] font-medium uppercase tracking-[0.15em] hover:bg-white hover:text-black transition-all duration-300">
+              Know More
+            </button>
+          </div>
+        </div>
+      </section>
+
+      {/* 9. GATHERING & TRANSPORTATION */}
       <section className="relative h-screen w-full overflow-hidden block">
         <img src="/images/gathering-and-transportaion.png" alt="" className="absolute inset-0 h-full w-full object-cover" />
         <div className="absolute inset-0 bg-black/30" />
