@@ -145,18 +145,51 @@ export default function OrinoxCapabilitiesPresentation() {
         </div>
       </section>
 
-      {/* 5. EXPLORATION SERVICES */}
+      {/* 5. CORE VALUES */}
       <section className="relative h-screen w-full overflow-hidden block">
-        <img src="/images/exploration-services.png" alt="" className="absolute inset-0 h-full w-full object-cover" />
-        <div className="absolute inset-0 bg-black/30" />
-        <div className="absolute bottom-1/2 translate-y-1/2 left-10 lg:left-25 z-20 space-y-3 md:space-y-5 max-w-xs sm:max-w-md lg:max-w-xl text-white flex flex-col">
-          <div>
-            <p className="inline-block text-xs uppercase tracking-wide mb-1 text-white/50">Upstream Services</p>
-          </div>
-          <h1 className="text-[14px] font-semibold leading-none text-white/80">Exploration Services</h1>
-          <div className="space-y-1">
-            <p className="text-[12px] text-white/60 leading-tight">End-to-end exploration capability to identify new oil and gas reserves, including G&G surveying, seismic data acquisition, and basin modeling.</p>
-            <p className="text-[12px] text-white/60 leading-tight mt-2">Orinox handles prospect generation, licensing rounds, and well planning.</p>
+        <img
+          src="/images/integrated-cross-sector-synergy1.png"
+          alt="Refinery background"
+          className="absolute inset-0 h-full w-full object-cover"
+        />
+        <div className="absolute inset-0 " />
+
+        {/* Core Values Header */}
+        <div className="absolute top-24 md:top-36 left-10 md:left-32 z-20 flex items-center space-x-6">
+          <img
+            src="/images/logo1.png"
+            alt="Orinox Logo"
+            className="h-[60px] md:h-[70px] w-auto opacity-95 object-contain"
+          />
+          <h1 className="text-5xl md:text-[64px] font-bold text-white tracking-tight">Core Values</h1>
+        </div>
+
+        {/* Values Grid */}
+        <div className="absolute bottom-16 md:bottom-24 left-0 right-0 z-20 px-10 md:px-32">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-20 max-w-7xl">
+            {/* Absolute Integrity */}
+            <div className="flex flex-col border-t border-white/20 pt-8">
+              <h3 className="text-white text-2xl font-bold mb-4 tracking-tight">Absolute Integrity</h3>
+              <p className="text-white/80 text-[14px] leading-relaxed font-normal">
+                Operating with uncompromising transparency and ethical rigor across all global energy exploration and production frameworks.
+              </p>
+            </div>
+
+            {/* Strategic Reliability */}
+            <div className="flex flex-col border-t border-white/20 pt-8">
+              <h3 className="text-white text-2xl font-bold mb-4 tracking-tight">Strategic Reliability</h3>
+              <p className="text-white/80 text-[14px] leading-relaxed font-normal">
+                Upholding the standard for industrial-scale reliability in midstream logistics, ensuring secure energy transportation networks.
+              </p>
+            </div>
+
+            {/* Technical Mastery */}
+            <div className="flex flex-col border-t border-white/20 pt-8">
+              <h3 className="text-white text-2xl font-bold mb-4 tracking-tight">Technical Mastery</h3>
+              <p className="text-white/80 text-[14px] leading-relaxed font-normal">
+                Advancing energy operations through precision engineering, digital infrastructure, and innovative technical advisory services.
+              </p>
+            </div>
           </div>
         </div>
       </section>
