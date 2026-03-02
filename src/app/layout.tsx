@@ -33,6 +33,9 @@ export const metadata: Metadata = {
     description: "Global leader in strategic development and technical management of capital-intensive infrastructure across the petroleum value chain.",
     images: ["/images/logo1.png"],
   },
+  icons: {
+    icon: "/images/orinox-favicon.png",
+  },
 };
 
 export default function RootLayout({
