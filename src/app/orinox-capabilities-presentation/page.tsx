@@ -510,7 +510,7 @@ export default function OrinoxCapabilitiesPresentation() {
               </div>
 
               <div className="pt-6">
-                <button type="submit" className="w-full py-4 border border-white/60 text-[11px] font-bold uppercase tracking-[0.2em] rounded-full hover:bg-white hover:text-black transition-all duration-300">
+                <button type="submit" className="w-full py-4 border text-white/60 border-white/60 text-[11px] font-bold uppercase tracking-[0.2em] rounded-full hover:bg-white hover:text-black transition-all duration-300">
                   Submit
                 </button>
               </div>
