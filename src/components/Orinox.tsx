@@ -1,5 +1,9 @@
+"use client";
+
 import Link from "next/link";
-import { motion, Variants } from "framer-motion";
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence, Variants } from "framer-motion";
+import { Menu, X } from "lucide-react";
 
 const fadeUp: Variants = {
   initial: { opacity: 0, y: 40 },
@@ -9,8 +13,8 @@ const fadeUp: Variants = {
 const anim = (delay: number = 0) => ({
   variants: fadeUp,
   initial: "initial",
-  whileInView: "animate",
-  viewport: { once: true },
+  animate: "animate",
+  exit: "initial",
   transition: {
     duration: 0.8,
     delay: delay,
@@ -19,6 +23,8 @@ const anim = (delay: number = 0) => ({
 });
 
 export default function Orinox() {
+  const [isOpen, setIsOpen] = useState(false);
+
   const columns = [
     {
       title: "About",
@@ -43,8 +49,11 @@ export default function Orinox() {
   ];
 
   return (
-    <main className="relative min-h-screen md:h-screen w-full bg-black overflow-hidden flex flex-col justify-center px-6 md:px-32 py-20 md:py-0">
-      {/* Background Illustration - Who We Are */}
+    <nav
+      className={`fixed top-0 left-0 w-full z-[100] bg-black text-white transition-all duration-700 ease-[0.21, 0.47, 0.32, 0.98] overflow-hidden ${isOpen ? "h-[60vh] md:h-[50vh]" : "h-20 md:h-28"
+        }`}
+    >
+      {/* Background Illustration - Visible in the entire area */}
       <div className="absolute inset-0 z-0">
         <img
           src="/images/who-we-are.png"
@@ -55,38 +64,75 @@ export default function Orinox() {
         <div className="absolute inset-0 bg-black/40" />
       </div>
 
-      {/* Logo Container */}
-      <motion.div {...anim(0.1)} className="absolute top-12 md:top-20 left-6 md:left-30 z-20">
-        <Link href="/">
-          <img
-            src="/images/orinox-white-logo.png"
-            alt="Orinox Logo"
-            className="h-8 md:h-12 w-auto"
-          />
-        </Link>
-      </motion.div>
+      <div className="relative z-10 flex flex-col h-full px-6 md:px-32">
+        {/* Navbar Header (Always visible at the top) */}
+        <div className="flex justify-between items-center h-20 md:h-28 flex-shrink-0">
+          <Link href="/">
+            <img
+              src="/images/orinox-white-logo.png"
+              alt="Orinox Logo"
+              className="h-8 md:h-12 w-auto"
+            />
+          </Link>
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="text-white hover:text-white/70 transition-colors focus:outline-none"
+            aria-label="Toggle Menu"
+          >
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={isOpen ? "open" : "closed"}
+                initial={{ rotate: -90, opacity: 0 }}
+                animate={{ rotate: 0, opacity: 1 }}
+                exit={{ rotate: 90, opacity: 0 }}
+                transition={{ duration: 0.2 }}
+              >
+                {isOpen ? <X size={32} strokeWidth={1.5} /> : <Menu size={32} strokeWidth={1.5} />}
+              </motion.div>
+            </AnimatePresence>
+          </button>
+        </div>
 
-      {/* Content Grid */}
-      <div className="relative mt-20 md:-mt-32 z-10 grid grid-cols-2 md:grid-cols-5 gap-x-8 md:gap-x-20 lg:gap-x-48 gap-y-10 md:gap-y-12 max-w-7xl">
-        {columns.map((column, idx) => (
-          <motion.div key={idx} {...anim(0.2 + idx * 0.1)} className="flex flex-col space-y-3 md:space-y-5">
-            <h3 className="text-white text-[12px] md:text-[13px] font-bold md:font-medium tracking-tight cursor-pointer hover:text-white/70 transition-colors ">
-              {column.title}
-            </h3>
-            <div className="flex flex-col space-y-3 md:space-y-4">
-              {column.items.map((item, itemIdx) => (
-                <p
-                  key={itemIdx}
-                  className="text-white/90 text-[12px] md:text-[13px] font-medium tracking-normal cursor-pointer hover:text-white/70 transition-colors"
-                >
-                  {item}
-                </p>
-              ))}
-            </div>
-          </motion.div>
-        ))}
+        {/* Dropdown Content - Revealed on Click */}
+        <AnimatePresence>
+          {isOpen && (
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 20 }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              className="flex-1 flex items-center justify-center pb-12 overflow-y-auto"
+            >
+              <div className="grid grid-cols-2 md:grid-cols-5 gap-x-8 md:gap-x-20 lg:gap-x-48 gap-y-8 md:gap-y-0 max-w-7xl w-full">
+                {columns.map((column, idx) => (
+                  <motion.div
+                    key={idx}
+                    initial={{ opacity: 0, y: 15 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.2 + idx * 0.05 }}
+                    className="flex flex-col space-y-2 md:space-y-4"
+                  >
+                    <h3 className="text-white text-[11px] md:text-[12px] font-medium  tracking-wider cursor-pointer hover:text-white/60 transition-colors">
+                      {column.title}
+                    </h3>
+                    <div className="flex flex-col space-y-2 md:space-y-3">
+                      {column.items.map((item, itemIdx) => (
+                        <p
+                          key={itemIdx}
+                          className="text-white text-[11px] md:text-[12px] font-medium tracking-normal cursor-pointer hover:text-white/60 transition-colors"
+                        >
+                          {item}
+                        </p>
+                      ))}
+                    </div>
+                  </motion.div>
+                ))}
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
-    </main>
+    </nav>
   );
 }
 
