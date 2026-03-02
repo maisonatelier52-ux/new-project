@@ -522,7 +522,7 @@ export default function OrinoxCapabilitiesPresentation() {
       </section>
 
       {/* 14. FOOTER */}
-      <footer className="relative h-screen w-full bg-black overflow-hidden px-6 md:px-32 pt-12 flex flex-col justify-between">
+      <footer className="relative min-h-screen md:h-screen w-full bg-black overflow-auto md:overflow-hidden px-6 md:px-32 pt-12 flex flex-col justify-between">
         <img
           src="/images/first-well-to-low-carbon-evacuation-route.png"
           alt="Offshore Rig"
