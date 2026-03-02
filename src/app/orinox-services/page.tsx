@@ -46,22 +46,19 @@ export default function OrinoxServices() {
                 {/* Top Image Section */}
                 <div className="relative h-[65%] w-full">
                     <img
-                        src="/images/exploration-services.png"
+                        src="/images/appraisal-and-field-evalution.png"
                         alt="Offshore Rig and Engineers"
                         className="h-full w-full object-cover"
                     />
-                    <div className="absolute inset-0 bg-black/10" />
                 </div>
 
                 {/* Bottom Content Section */}
                 <div className="relative h-[35%] w-full bg-black px-6 md:px-32 flex flex-col justify-center py-12">
                     {/* Decorative Top Border */}
-                    <div className="absolute top-0 left-6 md:left-32 right-6 md:right-32 h-[1px] bg-white/20" />
-
                     {/* Heading */}
                     <motion.h1
                         {...anim(0.1)}
-                        className="text-white text-2xl md:text-2xl font-bold tracking-tight mb-6"
+                        className="text-white text-2xl md:text-2xl font-bold tracking-tight mb-4"
                     >
                         Upstream Capabilities
                     </motion.h1>
@@ -86,157 +83,58 @@ export default function OrinoxServices() {
                 </div>
             </section>
 
-            {/* 2. STRATEGIC MIDSTREAM SOLUTIONS */}
-            <section className="relative min-h-screen w-full bg-black flex flex-col lg:flex-row border-t border-white/10">
-                {/* Left: Image Block */}
-                <div className="lg:w-1/2 relative h-[50vh] lg:h-auto order-2 lg:order-1">
-                    <img
-                        src="/images/transportation-and-storage.png"
-                        alt="Midstream Pipeline Infrastructure"
-                        className="h-full w-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
-                    />
-                    <div className="absolute inset-0 bg-black/20" />
-                </div>
+            {/* 2. PRECISION MIDSTREAM OPERATIONS */}
+            <section className="relative h-screen w-full overflow-hidden flex flex-col justify-between bg-black px-6 md:px-32 py-24">
+                <img
+                    src="/images/transportation-and-storage.png"
+                    alt="Midstream Operations"
+                    className="absolute inset-0 h-full w-full object-cover"
+                />
+                <div className="absolute inset-0 bg-black/40" />
 
-                {/* Right: Content Block */}
-                <div className="lg:w-1/2 px-6 md:px-20 py-20 flex flex-col justify-center order-1 lg:order-2">
-                    <motion.div {...anim(0.1)} className="space-y-6">
-                        <p className="text-white/60 text-[10px] md:text-[11px] uppercase tracking-[0.25em] font-medium">
-                            Midstream Operations
+                {/* Top Content */}
+                <div className="relative z-10 max-w-2xl mt-12">
+                    <motion.div {...anim(0.1)} className="space-y-1 mb-8">
+                        <p className="text-white/80 text-[12px] md:text-[14px] leading-relaxed font-light mb-8">
+                            Orinox Holding optimizes the transit and storage of critical hydrocarbon assets, integrating advanced logistics with unmatched technical reliability.
                         </p>
-                        <h1 className="text-white text-3xl md:text-5xl font-bold tracking-tight leading-[1.1]">
-                            Strategic Midstream<br />Logistics & Storage
+                        <h1 className="text-white text-3xl md:text-5xl font-bold tracking-tight">
+                            Precision Midstream Operations
                         </h1>
-                        <p className="text-white/70 text-[14px] leading-relaxed max-w-xl font-light">
-                            We engineer and manage high-capacity infrastructure for the safe, efficient movement of energy resources. Our midstream solutions bridge the gap between extraction and market delivery with uncompromising reliability.
-                        </p>
+                        <h2 className="text-white text-xl md:text-2xl font-bold tracking-tight opacity-90">
+                            Strategic Distribution Network
+                        </h2>
                     </motion.div>
 
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-12 mt-16">
-                        <motion.div {...anim(0.3)} className="space-y-3">
-                            <h3 className="text-white text-[14px] font-bold">Gathering & Transportation</h3>
-                            <p className="text-white/60 text-[13px] leading-relaxed font-light">
-                                Advanced pipeline network management and multi-modal transport logistics ensuring seamless delivery cycles.
-                            </p>
-                        </motion.div>
-                        <motion.div {...anim(0.4)} className="space-y-3">
-                            <h3 className="text-white text-[14px] font-bold">Processing & Treatment</h3>
-                            <p className="text-white/60 text-[13px] leading-relaxed font-light">
-                                Modular processing units designed for rapid deployment and optimized yield across diverse resource grades.
-                            </p>
-                        </motion.div>
-                        <motion.div {...anim(0.5)} className="space-y-3">
-                            <h3 className="text-white text-[14px] font-bold">Strategic Storage</h3>
-                            <p className="text-white/60 text-[13px] leading-relaxed font-light">
-                                Secure, technical-grade storage infrastructure with real-time inventory tracking and safety monitoring.
-                            </p>
-                        </motion.div>
-                        <motion.div {...anim(0.6)} className="space-y-3">
-                            <h3 className="text-white text-[14px] font-bold">Market Access</h3>
-                            <p className="text-white/60 text-[13px] leading-relaxed font-light">
-                                Integrated offtake management and strategic positioning to maximize commodity valuation and liquidity.
-                            </p>
-                        </motion.div>
-                    </div>
-                </div>
-            </section>
-
-            {/* 3. TECHNICAL MANAGEMENT & ASSET INTEGRITY */}
-            <section className="relative min-h-screen w-full flex flex-col items-center justify-center text-center px-6 md:px-32 border-t border-white/10 overflow-hidden">
-                {/* Immersive Background */}
-                <div className="absolute inset-0 z-0">
-                    <img
-                        src="/images/onshore-offshore-integrated-solutions.png"
-                        alt="Technical Infrastructure"
-                        className="h-full w-full object-cover scale-110"
-                    />
-                    <div className="absolute inset-0 bg-black/80 backdrop-blur-[4px]" />
-                </div>
-
-                <div className="relative z-10 max-w-4xl space-y-8">
-                    <motion.div {...anim(0.1)} className="space-y-4">
-                        <p className="text-white/60 text-[10px] md:text-[11px] uppercase tracking-[0.25em] font-medium">
-                            Operational Excellence
-                        </p>
-                        <h1 className="text-white text-4xl md:text-6xl font-bold tracking-tight leading-tight">
-                            Technical Management &<br />Asset Integrity
-                        </h1>
-                    </motion.div>
-
-                    <motion.p {...anim(0.3)} className="text-white/70 text-[16px] md:text-[18px] leading-relaxed font-light max-w-2xl mx-auto">
-                        Our technical oversight ensures that multi-billion dollar energy assets operate at peak efficiency while adhering to the most stringent global safety and environmental standards.
+                    <motion.p {...anim(0.3)} className="text-white/80 text-[13px] md:text-[14px] leading-relaxed font-light max-w-lg mt-6">
+                        Our midstream infrastructure is engineered for maximum throughput and safety.
+                        By utilizing intelligent pipeline arrays and modular storage solutions, we bridge
+                        the gap between production and the global market. Our systems feature real-time
+                        leak detection and automated pressure management, ensuring energy flow is
+                        secured 24/7 across all processing terminals.
                     </motion.p>
-
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16 mt-16 text-left">
-                        <motion.div {...anim(0.4)} className="space-y-3">
-                            <div className="h-[2px] w-8 bg-white/40 mb-4" />
-                            <h3 className="text-white text-[15px] font-bold">Predictive Maintenance</h3>
-                            <p className="text-white/60 text-[13px] leading-relaxed font-light">
-                                Digital twin technology and real-time sensor data used to anticipate maintenance needs and eliminate costly unplanned downtime.
-                            </p>
-                        </motion.div>
-                        <motion.div {...anim(0.5)} className="space-y-3">
-                            <div className="h-[2px] w-8 bg-white/40 mb-4" />
-                            <h3 className="text-white text-[15px] font-bold">Lifecycle Management</h3>
-                            <p className="text-white/60 text-[13px] leading-relaxed font-light">
-                                Comprehensive strategic planning from initial appraisal through to late-life services and sustainable decommissioning.
-                            </p>
-                        </motion.div>
-                        <motion.div {...anim(0.6)} className="space-y-3">
-                            <div className="h-[2px] w-8 bg-white/40 mb-4" />
-                            <h3 className="text-white text-[15px] font-bold">Compliance & Safety</h3>
-                            <p className="text-white/60 text-[13px] leading-relaxed font-light">
-                                Rigorous regulatory auditing and risk mitigation frameworks that define the highest standard of petroleum sector safety.
-                            </p>
-                        </motion.div>
-                    </div>
-                </div>
-            </section>
-
-            {/* 4. MARKETING & COMMERCIAL MANAGEMENT */}
-            <section className="relative min-h-screen w-full bg-black flex items-center justify-end px-6 md:px-32 border-t border-white/10 overflow-hidden">
-                {/* Thematic Visual */}
-                <div className="absolute top-0 left-0 w-full lg:w-2/3 h-full z-0 overflow-hidden">
-                    <img
-                        src="/images/marketing-and-offtaking-management.png"
-                        alt="Commercial Operations"
-                        className="h-full w-full object-cover opacity-50 grayscale"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-r from-black via-black/40 to-black" />
                 </div>
 
-                <div className="relative z-10 max-w-2xl text-right flex flex-col items-end">
-                    <motion.div {...anim(0.1)} className="space-y-4">
-                        <p className="text-white/60 text-[10px] md:text-[11px] uppercase tracking-[0.25em] font-medium">
-                            Commercial Optimization
+                {/* Bottom Stats */}
+                <div className="relative z-10 flex flex-wrap gap-x-16 gap-y-8">
+                    <motion.div {...anim(0.5)} className="space-y-1">
+                        <h3 className="text-white/80 text-3xl md:text-4xl font-bold tracking-tight">15,000+</h3>
+                        <p className="text-white/60 text-[10px] md:text-[11px] uppercase tracking-[0.2em] font-medium">
+                            Miles of Pipeline
                         </p>
-                        <h1 className="text-white text-3xl md:text-5xl font-bold tracking-tight leading-tight">
-                            Marketing &<br />Commercial Delivery
-                        </h1>
                     </motion.div>
-
-                    <motion.p {...anim(0.3)} className="mt-8 text-white/70 text-[14px] md:text-[16px] leading-relaxed font-light max-w-md">
-                        Our commercial strategy team identifies market dislocations and optimizes offtake logistics to ensure that the resources managed by Orinox achieve maximum realized value in global markets.
-                    </motion.p>
-
-                    <div className="grid grid-cols-1 gap-12 mt-16">
-                        <motion.div {...anim(0.4)} className="space-y-3 flex flex-col items-end">
-                            <h3 className="text-white text-[15px] font-bold">Trading & Logistics Coordination</h3>
-                            <p className="text-white/60 text-[13px] leading-relaxed font-light text-right">
-                                Managing complex multi-jurisdictional supply chains with precision timing to navigate market volatility and pricing fluctuations.
-                            </p>
-                        </motion.div>
-                        <motion.div {...anim(0.5)} className="space-y-3 flex flex-col items-end">
-                            <h3 className="text-white text-[15px] font-bold">Commodity Value Enhancement</h3>
-                            <p className="text-white/60 text-[13px] leading-relaxed font-light text-right">
-                                Utilizing proprietary analytics and quality-control frameworks to refine resource positioning and strengthen commercial leverage.
-                            </p>
-                        </motion.div>
-                    </div>
+                    <motion.div {...anim(0.6)} className="space-y-1">
+                        <h3 className="text-white/80 text-3xl md:text-4xl font-bold tracking-tight">1.2M</h3>
+                        <p className="text-white/60 text-[10px] md:text-[11px] uppercase tracking-[0.2em] font-medium">
+                            Storage Capacity
+                        </p>
+                    </motion.div>
                 </div>
             </section>
 
-            {/* 5. FOOTER */}
+            
+
+            {/* 3. FOOTER */}
             <footer className="relative min-h-screen md:h-screen w-full bg-black overflow-auto md:overflow-hidden px-6 md:px-32 pt-12 flex flex-col justify-between border-t border-white/10">
                 <img
                     src="/images/first-well-to-low-carbon-evacuation-route.png"
