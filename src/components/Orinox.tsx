@@ -54,7 +54,7 @@ export default function Orinox() {
       }}
       animate={hidden ? "hidden" : "visible"}
       transition={{ duration: 0.35, ease: "easeInOut" }}
-      className={`fixed top-0 left-0 w-full z-[100] bg-black text-white transition-[height] duration-700 ease-[0.21, 0.47, 0.32, 0.98] overflow-hidden ${isOpen ? "h-[60vh] md:h-[50vh]" : "h-20 md:h-24"
+      className={`fixed top-0 left-0 w-full z-[100] bg-black text-white transition-[height] duration-700 ease-[0.21, 0.47, 0.32, 0.98] overflow-hidden ${isOpen ? "h-[60vh] md:h-[50vh]" : "h-20 md:h-34"
         }`}
     >
       {/* Background Illustration - Visible in the entire area */}
@@ -70,7 +70,7 @@ export default function Orinox() {
 
       <div className="relative z-10 flex flex-col h-full px-6 md:px-32">
         {/* Navbar Header (Always visible at the top) */}
-        <div className="flex justify-between items-center h-20 md:h-24 flex-shrink-0">
+        <div className="flex justify-between items-center h-20 md:h-34 flex-shrink-0">
           <Link href="/">
             <img
               src="/images/orinox-white-logo.png"
