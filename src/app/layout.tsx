@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   description: "Global leader in strategic development and technical management of capital-intensive infrastructure across the petroleum value chain.",
   openGraph: {
     title: "Orinox Holding",
-    description: "Global leader in strategic development and technical management of capital-intensive infrastructure.",
+    description: "Global leader in strategic development and technical management of capital-intensive infrastructure across the petroleum value chain.",
     images: [
       {
         url: "/images/logo1.png",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Orinox Holding",
-    description: "Global leader in strategic development and technical management of capital-intensive infrastructure.",
+    description: "Global leader in strategic development and technical management of capital-intensive infrastructure across the petroleum value chain.",
     images: ["/images/logo1.png"],
   },
 };
