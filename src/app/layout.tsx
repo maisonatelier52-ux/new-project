@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     images: ["/images/logo1.png"],
   },
   icons: {
-    icon: "/images/orinox-favicon.png",
+    icon: "/images/favicon2.png",
   },
 };
 
