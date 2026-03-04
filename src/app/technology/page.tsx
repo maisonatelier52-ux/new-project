@@ -238,6 +238,77 @@ export default function TechnologyPage() {
                 </div>
             </section>
 
+            {/* Environmental Social Governance & Operational Safety Section */}
+            <section className="relative w-full min-h-screen bg-black flex items-center py-20 px-8 md:px-16 lg:px-24 xl:px-32">
+                <div className="max-w-7xl mx-auto w-full flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+
+                    {/* Left Content Side */}
+                    <div className="w-full lg:w-1/2 flex flex-col justify-center order-2 lg:order-1">
+                        <motion.div
+                            {...anim(0.1)}
+                            className="max-w-xl"
+                        >
+                            <h2 className="text-3xl lg:text-3xl font-bold text-white mb-8">
+                                Environmental Social Governance & <br className="hidden lg:block" /> Operational Safety
+                            </h2>
+                            <p className="text-white/70 text-[12px] md:text-[13px] leading-relaxed mb-10">
+                                Orinox Holding maintains a zero-incident culture through rigorous technical governance and
+                                real-time risk mitigation. We align our operations with IOGP guidelines and UN Sustainable
+                                Development Goals, ensuring long-term value for investors and stakeholders.
+                            </p>
+
+                            <ul className="space-y-4 mb-12">
+                                {[
+                                    { title: "Safety", desc: "Full ISO 45001 & 14001 certification across all managed assets." },
+                                    { title: "Sustainability", desc: "Targeting 25% reduction in carbon intensity by 2030." },
+                                    { title: "Transparency", desc: "Investor-ready ESG reporting with board-level oversight." },
+                                    { title: "Reliability", desc: "Predictive maintenance frameworks reducing environmental spill risks." }
+                                ].map((point, index) => (
+                                    <motion.li
+                                        key={index}
+                                        {...anim(0.2 + index * 0.1)}
+                                        className="flex items-start text-white/50 text-[12px] md:text-[13px] leading-relaxed"
+                                    >
+                                        <span className="mr-3 text-white/30">•</span>
+                                        <div className="group">
+                                            <span className="text-white/70 font-semibold group-hover:text-white transition-colors">{point.title}: </span>
+                                            {point.desc}
+                                        </div>
+                                    </motion.li>
+                                ))}
+                            </ul>
+
+                            <motion.button
+                                whileHover={{ scale: 1.05 }}
+                                whileTap={{ scale: 0.95 }}
+                                className="bg-white text-black px-10 py-3 text-[12px] font-normal tracking-wider rounded-sm w-fit transition-colors hover:bg-gray-200"
+                            >
+                                VIEW ESG REPORT
+                            </motion.button>
+                        </motion.div>
+                    </div>
+
+                    {/* Right Image Side */}
+                    <div className="w-full h-screen lg:w-1/2 relative aspect-square lg:aspect-[4/5] overflow-hidden order-1 lg:order-2">
+                        <motion.div
+                            initial={{ opacity: 0, clipPath: 'inset(0 0 0 100%)' }}
+                            whileInView={{ opacity: 1, clipPath: 'inset(0 0 0 0%)' }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 5.8, ease: [0.19, 1, 0.22, 1] }}
+                            className="h-full w-full"
+                        >
+                            <Image
+                                src="/images/oil-and-gas-processing.png"
+                                alt="Environmental Safety Infrastructure"
+                                fill
+                                className="object-cover"
+                            />
+                        </motion.div>
+                    </div>
+
+                </div>
+            </section>
+
             {/* Global Footer (Standard across pages) */}
             <footer className="relative min-h-screen md:h-screen w-full bg-black overflow-auto md:overflow-hidden px-6 md:px-32 pt-12 flex flex-col justify-between border-t border-white/10">
                 <img
