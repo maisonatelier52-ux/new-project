@@ -27,7 +27,7 @@ export default function Orinox() {
     { name: "About", href: "/orinox-capabilities-presentation" },
     { name: "Services", href: "/orinox-services" },
     { name: "Operations", href: "/" },
-    { name: "Regions", href: "/" },
+    { name: "Regions", href: "/regions" },
     { name: "Contracts", href: "/" },
     { name: "Technology", href: "/technology" },
     { name: "E&P Services", href: "/ep-services" },

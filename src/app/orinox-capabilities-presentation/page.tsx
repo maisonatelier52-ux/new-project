@@ -424,7 +424,7 @@ export default function OrinoxCapabilitiesPresentation() {
           alt="Global Port Operations"
           className="absolute inset-0 h-full w-full object-cover"
         />
-        <div className="absolute inset-0 bg-black/30" />
+        <div className="absolute inset-0 bg-black/20" />
 
         {/* Header content right-aligned */}
         <div className="relative z-20 text-right">
