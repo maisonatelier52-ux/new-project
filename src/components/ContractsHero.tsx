@@ -27,7 +27,7 @@ export default function ContractsHero() {
             <div className="relative z-10 max-w-4xl">
                 <motion.h1
                     {...anim(0.1)}
-                    className="text-3xl md:text-4xl font-bold text-white mb-10 tracking-tight"
+                    className="text-3xl md:text-2xl font-bold text-white mb-10 tracking-tight"
                 >
                     Unprecedented Access
                 </motion.h1>

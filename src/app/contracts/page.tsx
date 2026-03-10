@@ -5,6 +5,9 @@ import Link from "next/link";
 import Orinox from "@/components/Orinox";
 import ContractsHero from "@/components/ContractsHero";
 import ContractFrameworks from "@/components/ContractFrameworks";
+import RigFleetSection from "@/components/RigFleetSection";
+import StrategicCapital from "@/components/StrategicCapital";
+import ESGImperative from "@/components/ESGImperative";
 
 const fadeUp: Variants = {
     initial: { opacity: 0, y: 40 },
@@ -30,6 +33,9 @@ export default function ContractsPage() {
 
             <ContractsHero />
             <ContractFrameworks />
+            <RigFleetSection />
+            <StrategicCapital />
+            <ESGImperative />
 
             {/* Global Footer */}
             <footer className="relative min-h-screen md:h-screen w-full bg-black overflow-auto md:overflow-hidden px-6 md:px-32 pt-12 flex flex-col justify-between border-t border-white/10">

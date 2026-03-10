@@ -58,7 +58,7 @@ export default function ContractFrameworks() {
             <div className="max-w-7xl">
                 <motion.h2
                     {...anim(0.1)}
-                    className="text-2xl md:text-3xl font-bold mb-8 tracking-tight"
+                    className="text-xl md:text-2xl font-bold mb-8 tracking-tight"
                 >
                     Strategic Contractual Frameworks
                 </motion.h2>
@@ -79,7 +79,7 @@ export default function ContractFrameworks() {
                             {...anim(0.3 + index * 0.1)}
                             className="bg-white/10 border border-white/5 p-12 md:p-16  rounded-sm flex flex-col h-full hover:bg-white/[0.02] transition-colors duration-500"
                         >
-                            <h3 className="text-lg md:text-xl font-bold mb-10 max-w-[280px] leading-tight text-white">
+                            <h3 className="text-lg md:text-lg font-bold mb-10 max-w-[280px] leading-tight text-white">
                                 {framework.title}
                             </h3>
 
