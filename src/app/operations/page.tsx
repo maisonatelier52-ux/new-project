@@ -4,6 +4,10 @@ import { motion, Variants } from "framer-motion";
 import Link from "next/link";
 import Orinox from "@/components/Orinox";
 import OperationsHero from "@/components/OperationsHero";
+import VesselInventory from "@/components/VesselInventory";
+import EfficiencyAtScale from "@/components/EfficiencyAtScale";
+import GrowthStewardship from "@/components/GrowthStewardship";
+import InstitutionalStrategy from "@/components/InstitutionalStrategy";
 
 const fadeUp: Variants = {
     initial: { opacity: 0, y: 40 },
@@ -30,6 +34,18 @@ export default function OperationsPage() {
 
             {/* Hero Section */}
             <OperationsHero />
+
+            {/* Vessel Inventory Section */}
+            <VesselInventory />
+
+            {/* Efficiency at Scale Section */}
+            <EfficiencyAtScale />
+
+            {/* Strategic Growth & Investor Stewardship Section */}
+            <GrowthStewardship />
+
+            {/* Institutional Strategy & Global Operational Infrastructure Section */}
+            <InstitutionalStrategy />
 
             {/* Global Footer (Standard across pages) */}
             <footer className="relative min-h-screen md:h-screen w-full bg-black overflow-auto md:overflow-hidden px-6 md:px-32 pt-12 flex flex-col justify-between border-t border-white/10">
