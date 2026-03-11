@@ -33,7 +33,7 @@ export default function Orinox() {
     { name: "E&P Services", href: "/ep-services" },
     { name: "Upstream", href: "/" },
     { name: "Midstream", href: "/" },
-    { name: "Investors", href: "/" },
+    { name: "Investors", href: "/investors" },
     { name: "ESG", href: "/esg" },
     { name: "Case Studies / Projects", href: "/case-studies-projects" },
     { name: "Team", href: "/" },

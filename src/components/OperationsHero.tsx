@@ -20,7 +20,7 @@ export default function OperationsHero() {
                         {...anim(0.1)}
                         className="max-w-xl"
                     >
-                        <h1 className="text-3xl md:text-2xl lg:text-3xl font-bold text-white leading-tight mb-8">
+                        <h1 className="text-3xl md:text-2xl lg:text-2xl font-bold text-white leading-tight mb-8">
                             Elite Rig Fleet & Advanced <br />
                             Infrastructure
                         </h1>
