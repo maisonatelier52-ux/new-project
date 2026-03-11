@@ -8,7 +8,7 @@ export default function ESGImperative() {
         whileInView: { opacity: 1, y: 0 },
         viewport: { once: true },
         transition: { duration: 0.8, delay, ease: [0.21, 0.47, 0.32, 0.98] as const }
-    });
+    });    
 
     return (
         <section className="bg-black text-white py-24 md:py-32 px-8 md:px-16 lg:px-24 xl:px-32">
@@ -38,7 +38,7 @@ export default function ESGImperative() {
                         </p>
                     </motion.div>
 
-                    <motion.div {...anim(0.4)}>
+                    <motion.div {...anim(0.4)}> 
                         <h3 className="text-lg md:text-lg font-bold mb-3 tracking-tight">Operational Safety</h3>
                         <p className="text-white/50 text-[13px] md:text-[14px] max-w-xl leading-relaxed font-light">
                             A steadfast zero-incident goal driven by rigorous hazard identification and

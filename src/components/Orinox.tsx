@@ -26,7 +26,7 @@ export default function Orinox() {
   const navLinks = [
     { name: "About", href: "/orinox-capabilities-presentation" },
     { name: "Services", href: "/orinox-services" },
-    { name: "Operations", href: "/" },
+    { name: "Operations", href: "/operations" },
     { name: "Regions", href: "/regions" },
     { name: "Contracts", href: "/contracts" },
     { name: "Technology", href: "/technology" },
