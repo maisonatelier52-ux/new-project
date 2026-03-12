@@ -36,8 +36,8 @@ export default function Orinox() {
     { name: "Investors", href: "/investors" },
     { name: "ESG", href: "/esg" },
     { name: "Case Studies / Projects", href: "/case-studies-projects" },
-    { name: "Team", href: "/" },
-    { name: "Insights", href: "/" },
+    { name: "Team", href: "/team" },
+    { name: "Insights", href: "/insights" },
     { name: "Contact", href: "/" },
   ];
 
