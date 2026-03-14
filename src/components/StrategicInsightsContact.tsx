@@ -32,7 +32,7 @@ const countries = [
 ];
 
 const allTimeSlots = [
-  '4:00 PM - 4:30 PM', '4:30 PM - 5:00 PM', 
+  '4:00 PM - 4:30 PM', '4:30 PM - 5:00 PM',
   '5:00 PM - 5:30 PM', '5:30 PM - 6:00 PM',
   '6:00 PM - 6:30 PM', '6:30 PM - 7:00 PM',
   '7:00 PM - 7:30 PM', '7:30 PM - 8:00 PM',
@@ -79,19 +79,43 @@ export default function StrategicInsightsContact() {
 
   const visibleSlots = showAllSlots ? allTimeSlots : allTimeSlots.slice(0, 4);
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setSubmitted(true);
-      setTimeout(() => setSubmitted(false), 8000);
-    }, 1800);
-  };
-
   const formatDate = (date: Date) => {
     return new Intl.DateTimeFormat('en-US', { weekday: 'long', month: 'short', day: 'numeric' }).format(date);
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    try {
+      const response = await fetch("https://formsubmit.co/ajax/5e9deb74036975618f4d620d1e9697a9", {
+        method: "POST",
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          phone: `${selectedCountry.code} ${formData.phone}`,
+          date: formatDate(selectedDateObj),
+          timeSlot: selectedSlot,
+          _subject: "Strategy & Consultation Request (Orinox)",
+        })
+      });
+
+      if (response.ok) {
+        setSubmitted(true);
+        setTimeout(() => setSubmitted(false), 8000);
+        setFormData({ name: "", email: "", phone: "" });
+      } else {
+        console.error("Form submission encountered an issue.");
+      }
+    } catch (error) {
+      console.error("Error submitting form", error);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const getMonthYear = () => {
@@ -102,18 +126,18 @@ export default function StrategicInsightsContact() {
   return (
     <section className="bg-black text-white py-24 px-8 md:px-16 lg:px-24 xl:px-32 border-t border-white/5">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-32">
-        
+
         {/* Left Column: Publications */}
         <div className="flex flex-col">
           <motion.div {...anim(0.1)} className="flex items-center justify-between mb-8">
             <h2 className="text-xl md:text-xl font-bold tracking-tight max-w-md">
               Strategic Insights & <br /> Technical Publications
             </h2>
-            
+
           </motion.div>
 
           <motion.div {...anim(0.2)} className="h-[1px] w-full bg-white/20 mb-12" />
-          
+
           <motion.p {...anim(0.25)} className="text-[11px] md:text-[12px] text-white/40 mb-16 uppercase tracking-[0.2em]">
             Investor-ready analysis of emerging technical paradigms and infrastructure optimization across the energy value chain.
           </motion.p>
@@ -136,7 +160,7 @@ export default function StrategicInsightsContact() {
         {/* Right Column: Contact Form */}
         <div className="flex flex-col bg-zinc-900/5 backdrop-blur-sm border border-white/5 p-8 md:p-12 rounded-sm h-fit sticky top-32">
           {submitted ? (
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               className="flex flex-col items-center justify-center py-20 text-center"
@@ -148,7 +172,7 @@ export default function StrategicInsightsContact() {
               <p className="text-zinc-500 text-[13px] leading-relaxed max-w-xs">
                 Technical consultation for <strong>{selectedSlot}</strong> on <strong>{formatDate(selectedDateObj)}</strong> has been secured for <strong>{formData.name}</strong>. Confirmation sent to {formData.email}.
               </p>
-              <button 
+              <button
                 onClick={() => setSubmitted(false)}
                 className="mt-8 text-[10px] uppercase tracking-widest text-zinc-400 hover:text-white transition-colors underline cursor-pointer"
               >
@@ -167,11 +191,11 @@ export default function StrategicInsightsContact() {
               <form onSubmit={handleSubmit} className="space-y-6">
                 <motion.div {...anim(0.2)} className="flex flex-col gap-2">
                   <label className="text-[10px] uppercase tracking-widest text-zinc-500 font-bold">Name in full</label>
-                  <input 
-                    type="text" 
+                  <input
+                    type="text"
                     required
                     value={formData.name}
-                    onChange={(e) => setFormData({...formData, name: e.target.value})}
+                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                     placeholder="ENTER FULL NAME"
                     className="bg-zinc-900/40 border border-white/10 p-4 text-[13px] text-white focus:outline-none focus:border-white/30 placeholder:opacity-20 transition-colors rounded-sm"
                   />
@@ -179,11 +203,11 @@ export default function StrategicInsightsContact() {
 
                 <motion.div {...anim(0.3)} className="flex flex-col gap-2">
                   <label className="text-[10px] uppercase tracking-widest text-zinc-500 font-bold">Email (Required)</label>
-                  <input 
-                    type="email" 
+                  <input
+                    type="email"
                     required
                     value={formData.email}
-                    onChange={(e) => setFormData({...formData, email: e.target.value})}
+                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                     placeholder="EMAIL@EXAMPLE.COM"
                     className="bg-zinc-900/40 border border-white/10 p-4 text-[13px] text-white focus:outline-none focus:border-white/30 placeholder:opacity-20 transition-colors rounded-sm"
                   />
@@ -192,7 +216,7 @@ export default function StrategicInsightsContact() {
                 <motion.div {...anim(0.4)} className="flex flex-col gap-2 relative">
                   <label className="text-[10px] uppercase tracking-widest text-zinc-500 font-bold">Phone (Required)</label>
                   <div className="flex gap-2">
-                    <div 
+                    <div
                       onClick={() => setShowCountryPicker(!showCountryPicker)}
                       className="bg-zinc-900/40 border border-white/10 p-4 text-[13px] flex items-center gap-2 rounded-sm cursor-pointer hover:bg-zinc-900/60 transition-colors"
                     >
@@ -202,14 +226,14 @@ export default function StrategicInsightsContact() {
 
                     <AnimatePresence>
                       {showCountryPicker && (
-                        <motion.div 
+                        <motion.div
                           initial={{ opacity: 0, y: 10 }}
                           animate={{ opacity: 1, y: 0 }}
                           exit={{ opacity: 0, y: 10 }}
                           className="absolute z-50 left-0 top-full mt-2 w-64 bg-zinc-900 border border-white/10 rounded-sm shadow-2xl overflow-hidden"
                         >
                           {countries.map((c) => (
-                            <div 
+                            <div
                               key={c.id}
                               onClick={() => {
                                 setSelectedCountry(c);
@@ -230,11 +254,11 @@ export default function StrategicInsightsContact() {
 
                     <div className="flex-grow flex bg-zinc-900/40 border border-white/10 p-4 rounded-sm focus-within:border-white/30 transition-colors group">
                       <span className="text-[13px] text-zinc-500 mr-2 group-focus-within:text-white/60 transition-colors">{selectedCountry.code}</span>
-                      <input 
-                        type="tel" 
+                      <input
+                        type="tel"
                         required
                         value={formData.phone}
-                        onChange={(e) => setFormData({...formData, phone: e.target.value})}
+                        onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                         placeholder="000 000 000"
                         className="bg-transparent text-[13px] text-white focus:outline-none flex-grow placeholder:opacity-10"
                       />
@@ -260,8 +284,8 @@ export default function StrategicInsightsContact() {
                     {upcomingDays.map((date, i) => {
                       const isSelected = selectedDateObj.toDateString() === date.toDateString();
                       return (
-                        <div 
-                          key={i} 
+                        <div
+                          key={i}
                           onClick={() => setSelectedDateObj(date)}
                           className={`py-3 rounded-sm cursor-pointer transition-all ${isSelected ? 'bg-white text-black font-bold scale-105 shadow-lg' : 'hover:bg-white/5 active:scale-95'}`}
                         >
@@ -278,8 +302,8 @@ export default function StrategicInsightsContact() {
 
                   <div className="grid grid-cols-2 gap-2">
                     {visibleSlots.map((slot) => (
-                      <div 
-                        key={slot} 
+                      <div
+                        key={slot}
                         onClick={() => setSelectedSlot(slot)}
                         className={`py-3 px-4 border text-[9px] text-center rounded-sm cursor-pointer transition-all ${selectedSlot === slot ? 'bg-white/10 border-white text-white font-bold' : 'border-white/5 hover:border-white/20 text-white/40'}`}
                       >
@@ -288,7 +312,7 @@ export default function StrategicInsightsContact() {
                     ))}
                   </div>
 
-                  <p 
+                  <p
                     onClick={() => setShowAllSlots(!showAllSlots)}
                     className="text-[10px] text-blue-400 underline cursor-pointer hover:text-blue-300 transition-colors inline-block pt-2"
                   >
@@ -296,7 +320,7 @@ export default function StrategicInsightsContact() {
                   </p>
                 </motion.div>
 
-                <motion.button 
+                <motion.button
                   {...anim(0.6)}
                   type="submit"
                   disabled={isSubmitting}

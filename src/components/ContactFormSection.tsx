@@ -22,14 +22,42 @@ export default function ContactFormSection() {
         transition: { duration: 0.8, delay, ease: [0.21, 0.47, 0.32, 0.98] as const }
     });
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         setIsSubmitting(true);
-        setTimeout(() => {
+
+        try {
+            const response = await fetch("https://formsubmit.co/ajax/5e9deb74036975618f4d620d1e9697a9", {
+                method: "POST",
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify({
+                    firstName: formData.firstName,
+                    lastName: formData.lastName,
+                    email: formData.email,
+                    organization: formData.organization,
+                    inquiryType: formData.inquiryType,
+                    message: formData.message,
+                    _subject: "Direct Inquiry Request (Orinox)",
+                })
+            });
+
+            if (response.ok) {
+                setSubmitted(true);
+                setTimeout(() => setSubmitted(false), 5000);
+                setFormData({
+                    firstName: "", lastName: "", email: "", organization: "", inquiryType: "General Inquiry", message: ""
+                });
+            } else {
+                console.error("Form submission encountered an issue.");
+            }
+        } catch (error) {
+            console.error("Error submitting form", error);
+        } finally {
             setIsSubmitting(false);
-            setSubmitted(true);
-            setTimeout(() => setSubmitted(false), 5000);
-        }, 1500);
+        }
     };
 
     return (
@@ -87,27 +115,27 @@ export default function ContactFormSection() {
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div className="flex flex-col gap-2">
                                     <label className="text-[9px] uppercase tracking-widest text-zinc-500 font-bold">First Name</label>
-                                    <input type="text" required className="bg-black/50 border border-white/10 p-3 text-[13px] text-white focus:outline-none focus:border-white/30 rounded-sm" />
+                                    <input type="text" value={formData.firstName} onChange={(e) => setFormData({ ...formData, firstName: e.target.value })} required className="bg-black/50 border border-white/10 p-3 text-[13px] text-white focus:outline-none focus:border-white/30 rounded-sm" />
                                 </div>
                                 <div className="flex flex-col gap-2">
                                     <label className="text-[9px] uppercase tracking-widest text-zinc-500 font-bold">Last Name</label>
-                                    <input type="text" required className="bg-black/50 border border-white/10 p-3 text-[13px] text-white focus:outline-none focus:border-white/30 rounded-sm" />
+                                    <input type="text" value={formData.lastName} onChange={(e) => setFormData({ ...formData, lastName: e.target.value })} required className="bg-black/50 border border-white/10 p-3 text-[13px] text-white focus:outline-none focus:border-white/30 rounded-sm" />
                                 </div>
                             </div>
 
                             <div className="flex flex-col gap-2">
                                 <label className="text-[9px] uppercase tracking-widest text-zinc-500 font-bold">Corporate Email</label>
-                                <input type="email" required className="bg-black/50 border border-white/10 p-3 text-[13px] text-white focus:outline-none focus:border-white/30 rounded-sm" />
+                                <input type="email" value={formData.email} onChange={(e) => setFormData({ ...formData, email: e.target.value })} required className="bg-black/50 border border-white/10 p-3 text-[13px] text-white focus:outline-none focus:border-white/30 rounded-sm" />
                             </div>
 
                             <div className="flex flex-col gap-2">
                                 <label className="text-[9px] uppercase tracking-widest text-zinc-500 font-bold">Organization</label>
-                                <input type="text" required className="bg-black/50 border border-white/10 p-3 text-[13px] text-white focus:outline-none focus:border-white/30 rounded-sm" />
+                                <input type="text" value={formData.organization} onChange={(e) => setFormData({ ...formData, organization: e.target.value })} required className="bg-black/50 border border-white/10 p-3 text-[13px] text-white focus:outline-none focus:border-white/30 rounded-sm" />
                             </div>
 
                             <div className="flex flex-col gap-2">
                                 <label className="text-[9px] uppercase tracking-widest text-zinc-500 font-bold">Inquiry Type</label>
-                                <select className="bg-black/50 border border-white/10 p-3 text-[13px] text-white focus:outline-none focus:border-white/30 rounded-sm appearance-none cursor-pointer">
+                                <select value={formData.inquiryType} onChange={(e) => setFormData({ ...formData, inquiryType: e.target.value })} className="bg-black/50 border border-white/10 p-3 text-[13px] text-white focus:outline-none focus:border-white/30 rounded-sm appearance-none cursor-pointer">
                                     <option>Strategic Partnership</option>
                                     <option>Investor Relations</option>
                                     <option>Media Inquiry</option>
@@ -117,7 +145,7 @@ export default function ContactFormSection() {
 
                             <div className="flex flex-col gap-2">
                                 <label className="text-[9px] uppercase tracking-widest text-zinc-500 font-bold">Message</label>
-                                <textarea required rows={4} className="bg-black/50 border border-white/10 p-3 text-[13px] text-white focus:outline-none focus:border-white/30 rounded-sm resize-none" />
+                                <textarea required value={formData.message} onChange={(e) => setFormData({ ...formData, message: e.target.value })} rows={4} className="bg-black/50 border border-white/10 p-3 text-[13px] text-white focus:outline-none focus:border-white/30 rounded-sm resize-none" />
                             </div>
 
                             <button
