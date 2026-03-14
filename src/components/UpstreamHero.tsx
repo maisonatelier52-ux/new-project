@@ -19,8 +19,6 @@ export default function UpstreamHero() {
           alt="Upstream Exploration" 
           className="w-full h-full object-cover opacity-70 brightness-[0.4]"
         />
-        {/* Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto w-full">
