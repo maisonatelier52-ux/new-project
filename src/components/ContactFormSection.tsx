@@ -151,9 +151,14 @@ export default function ContactFormSection() {
                             <button
                                 type="submit"
                                 disabled={isSubmitting}
-                                className={`w-full py-4 border border-white/20 text-[10px] uppercase font-bold tracking-[0.2em] transition-all rounded-sm ${isSubmitting ? 'bg-zinc-800 text-zinc-500' : 'hover:bg-white hover:text-black cursor-pointer'}`}
+                                className={`w-full py-4 border border-white/20 text-[10px] uppercase font-bold tracking-[0.2em] transition-all rounded-sm flex items-center justify-center gap-4 ${isSubmitting ? 'bg-zinc-800 text-zinc-500 cursor-not-allowed' : 'hover:bg-white hover:text-black cursor-pointer'}`}
                             >
-                                {isSubmitting ? 'Transmitting...' : 'Submit Inquiry'}
+                                {isSubmitting ? (
+                                    <>
+                                        <div className="w-3 h-3 border border-zinc-400 border-t-white rounded-full animate-spin" />
+                                        Transmitting...
+                                    </>
+                                ) : 'Submit Inquiry'}
                             </button>
                         </motion.form>
                     )}
